@@ -1,0 +1,134 @@
+<!-- <swiper
+  [config]="config"
+  [ngClass]="{ mySwiper: !smallScreen }"
+  class="swiper-h"
+  (swiper)="onSwiper($event)"
+  #newSwiper
+>
+  <ng-template swiperSlide *ngFor="let slide of slideArray | keyvalue">
+    <div class="row js-fullheight slider-item">
+      <div class="col-md-6 slider-text">
+        <div class="text">
+          <div class="author mb-4 d-flex align-items-center">
+            <a
+              href="#"
+              class="img"
+              style="background-image: url(../../assets/images/person_1.jpg)"
+            ></a>
+            <div class="ml-3 info">
+              <span>Written by</span>
+              <h3><a href="#">Dave Lewis</a>, <span>October 04, 2018</span></h3>
+            </div>
+          </div>
+          <div class="text-2">
+            <span class="big">Europe</span>
+            <h1 class="mb-4">
+              <a href="#">Switzerland famous for chocolate making</a>
+            </h1>
+            <p class="mb-4">
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3"
+                >Continue Reading</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img
+          [src]="slide.value.img"
+          class="sliderImg"
+          alt="Random slide picture"
+        />
+      </div>
+    </div>
+  </ng-template>
+</swiper> -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-auto me-auto" href="">OutOnABudget</a>
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div> -->
+  </div>
+</nav>
+
+<hr class="my-0" />
+
+<div class="container">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Top Stores</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mother's Day Sales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Top 20 Coupons</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>

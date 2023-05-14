@@ -1,0 +1,106 @@
+div#homeRoute {
+  background-color: #f2f2f2;
+}
+div.bgCard1 > div > h5.card-title {
+  font-weight: 700;
+  font-size: 28px;
+  margin-top: 5vh;
+  margin-bottom: 4vh;
+}
+div.bgCard1 > div > p.card-text {
+  font-size: 19px;
+  margin-bottom: 25px;
+  margin-top: 7px;
+}
+input#mainSearchInput {
+  width: 400px;
+  border-radius: 0;
+  outline: none;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+div#searchList {
+  width: 400px;
+  margin: 0 auto;
+  font-family: poppinslight;
+  margin-top: 12px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  z-index: 999;
+}
+div#searchList h5.mb-1 {
+  font-size: 15px;
+}
+div#searchList p.mb-1 {
+  font-size: 11px;
+}
+.swiper-slide img {
+  width: 100% !important;
+}
+img.sliderImg {
+  cursor: pointer;
+}
+swiper.mySwiper {
+  width: 100% !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #fff;
+  color: #285372 !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  top: 40%;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: 900;
+}
+.swiper-button-next {
+  right: 0;
+  padding-left: 5px;
+}
+.swiper-button-prev {
+  left: 0;
+  padding-right: 5px;
+}
+div.elevatedCard {
+  background-color: transparent;
+  border: none;
+}
+div.elevatedCard div.card-body {
+  width: 96%;
+  margin: 0 auto;
+  position: relative;
+  top: -8vh;
+  background-color: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07);
+}
+div.elevatedCard p.couponDescription,
+div.bestOffersCard p.bestDealDescription {
+  font-size: 0.95rem !important;
+  font-weight: 400;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+div.elevatedCard img.cardImage {
+  width: 120px !important;
+  height: 100px;
+  position: relative;
+  top: 25px;
+}
+div.storesCard > img {
+  width: 50% !important;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+div.bestOffersCard {
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07);
+}

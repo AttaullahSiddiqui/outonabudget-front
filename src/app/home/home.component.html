@@ -1,0 +1,627 @@
+<div id="homeRoute">
+  <div class="card text-bg-dark bgCard1">
+    <img
+      src="../../assets/images/bg1.jpg"
+      class="card-img"
+      alt="background 1"
+    />
+    <div class="card-img-overlay text-center">
+      <h5 class="card-title">Today's Best Online Coupons</h5>
+      <p class="card-text">
+        Find the biggest savings for your favourite stores with our free promo
+        codes
+      </p>
+      <input
+        id="mainSearchInput"
+        class="form-control"
+        type="text"
+        placeholder="Search 1000+ promo codes and deals.."
+        (input)="searchFunc(searchBox)"
+        (focus)="switch = true"
+        (focusout)="focusOutFunc()"
+        [(ngModel)]="searchBox"
+      />
+      <div
+        class="list-group list-group-flush"
+        id="searchList"
+        *ngIf="searchBox && switch"
+      >
+        <a
+          href=""
+          class="list-group-item list-group-item-action border-0 pt-1 pb-2 disabled text-start"
+          aria-current="true"
+        >
+          <small>Results</small>
+        </a>
+        <a
+          href=""
+          class="list-group-item list-group-item-action border-0 py-3"
+          aria-current="true"
+          *ngIf="noResult"
+        >
+          No result found for <b>"{{ searchBox }}"</b>
+        </a>
+        <a
+          href=""
+          class="list-group-item list-group-item-action border-0 py-3"
+          aria-current="true"
+        >
+          <div class="d-flex">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+              alt="John Doe"
+              class="me-3 rounded-circle"
+              style="width: 40px; height: 40px"
+            />
+            <div>
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">32 Degrees</h5>
+              </div>
+              <p class="mb-1">32 offers available</p>
+            </div>
+          </div>
+        </a>
+        <a
+          href=""
+          class="list-group-item list-group-item-action border-0 py-3"
+          aria-current="true"
+        >
+          <div class="d-flex">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+              alt="John Doe"
+              class="me-3 rounded-circle"
+              style="width: 40px; height: 40px"
+            />
+            <div>
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">32 Degrees</h5>
+              </div>
+              <p class="mb-1">32 offers available</p>
+            </div>
+          </div>
+        </a>
+        <a
+          href=""
+          class="list-group-item list-group-item-action border-0 py-3"
+          aria-current="true"
+        >
+          <div class="d-flex">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+              alt="John Doe"
+              class="me-3 rounded-circle"
+              style="width: 40px; height: 40px"
+            />
+            <div>
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">32 Degrees</h5>
+              </div>
+              <p class="mb-1">32 offers available</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- <a class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">List group item heading</h5>
+          <small class="text-muted">3 days ago</small>
+        </div>
+        <p class="mb-1">Some placeholder content in a paragraph.</p>
+        <small class="text-muted">And some muted small print.</small>
+      </a> -->
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+  <div class="container">
+    <p class="fs-4 fw-bold mb-1">Free Promo Codes</p>
+    <p class="fs-5">Our best deals and biggest savings</p>
+    <br />
+    <swiper
+      [config]="config"
+      class="swiper-h"
+      (swiper)="onSwiper($event)"
+      #newSwiper
+    >
+      <ng-template swiperSlide>
+        <div class="card elevatedCard">
+          <img src="../../assets/dummyimages/cp1.jpg" class="card-img-top" />
+          <div class="card-body">
+            <div class="d-flex">
+              <img
+                src="../../assets/dummyimages/slogo1.jpg"
+                class="me-2 cardImage"
+              />
+              <div class="ps-3 border-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <small>code</small>
+                  <small class="text-muted">Ballard Designs</small>
+                </div>
+                <h6 class="mb-1 pt-1 fw-semibold">$20 OFF</h6>
+                <p class="mb-1 couponDescription">
+                  Get Up to $20 Off with This Walmart Coupon Code
+                </p>
+                <br />
+                <small
+                  ><span class="fw-semibold">Expiry Date:</span> Aug 5</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card elevatedCard">
+          <img
+            src="../../assets/dummyimages/cp2.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="d-flex">
+              <img
+                src="https://coupons.businessinsider.com/images/256x//images/b/Ballard-designs.png"
+                class="me-2 cardImage"
+              />
+              <div class="ps-3 border-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <small>code</small>
+                  <small class="text-muted">Ballard Designs</small>
+                </div>
+                <h6 class="mb-1 pt-1 fw-semibold">$20 OFF</h6>
+                <p class="mb-1 couponDescription">
+                  Get Up to $20 Off with This Walmart Coupon Code
+                </p>
+                <br />
+                <small
+                  ><span class="fw-semibold">Expiry Date:</span> Aug 5</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card elevatedCard">
+          <img
+            src="../../assets/dummyimages/cp3.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="d-flex">
+              <img
+                src="https://coupons.businessinsider.com/images/256x//images/g/Gymshark_Logo.png"
+                class="me-2 cardImage"
+              />
+              <div class="ps-3 border-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <small>code</small>
+                  <small class="text-muted">Ballard Designs</small>
+                </div>
+                <h6 class="mb-1 pt-1 fw-semibold">$20 OFF</h6>
+                <p class="mb-1 couponDescription">
+                  Get Up to $20 Off with This Walmart Coupon Code
+                </p>
+                <br />
+                <small
+                  ><span class="fw-semibold">Expiry Date:</span> Aug 5</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card elevatedCard">
+          <img
+            src="../../assets/dummyimages/cp4.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="d-flex">
+              <img
+                src="https://coupons.businessinsider.com/images/256x//images/s/StubHub_Logo.png"
+                class="me-2 cardImage"
+              />
+              <div class="ps-3 border-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <small>code</small>
+                  <small class="text-muted">Ballard Designs</small>
+                </div>
+                <h6 class="mb-1 pt-1 fw-semibold">$20 OFF</h6>
+                <p class="mb-1 couponDescription">
+                  Get Up to $20 Off with This Walmart Coupon Code
+                </p>
+                <br />
+                <small
+                  ><span class="fw-semibold">Expiry Date:</span> Aug 5</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card elevatedCard">
+          <img
+            src="../../assets/dummyimages/cp5.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="d-flex">
+              <img
+                src="https://coupons.businessinsider.com/images/256x//images/g/greenchef.png"
+                class="me-2 cardImage"
+              />
+              <div class="ps-3 border-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <small>code</small>
+                  <small class="text-muted">Ballard Designs</small>
+                </div>
+                <h6 class="mb-1 pt-1 fw-semibold">$20 OFF</h6>
+                <p class="mb-1 couponDescription">
+                  Get Up to $20 Off with This Walmart Coupon Code
+                </p>
+                <br />
+                <small
+                  ><span class="fw-semibold">Expiry Date:</span> Aug 5</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card elevatedCard">
+          <img
+            src="../../assets/dummyimages/cp6.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="d-flex">
+              <img
+                src="https://coupons.businessinsider.com/images/256x//images/r/rackroomshoes.png"
+                class="me-2 cardImage"
+              />
+              <div class="ps-3 border-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <small>code</small>
+                  <small class="text-muted">Ballard Designs</small>
+                </div>
+                <h6 class="mb-1 pt-1 fw-semibold">$20 OFF</h6>
+                <p class="mb-1 couponDescription">
+                  Get Up to $20 Off with This Walmart Coupon Code
+                </p>
+                <br />
+                <small
+                  ><span class="fw-semibold">Expiry Date:</span> Aug 5</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+  <br />
+  <br />
+  <div class="container">
+    <p class="fs-4 fw-bold mb-1">Popular Stores</p>
+    <p class="fs-5">Free coupons for your favourite stores</p>
+    <br />
+    <swiper
+      [config]="config2"
+      class="swiper-h"
+      (swiper)="onSwiper($event)"
+      #newSwiper
+    >
+      <ng-template swiperSlide>
+        <div class="card storesCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//images/a/Ancestry_com_Logo.png"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">12 coupons</p>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card storesCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//images/u/UberEats_Logo.png"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">12 coupons</p>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card storesCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//images/b/Bath_and_Body_Works.png"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">12 coupons</p>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card storesCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//images/m/macys.png"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">12 coupons</p>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card storesCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//images/n/Nike_Logo.png"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">12 coupons</p>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card storesCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//images/h/HokaOneOne_logo.png"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">12 coupons</p>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card storesCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//images/a/Ancestry_com_Logo.png"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">12 coupons</p>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card storesCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//images/a/Ancestry_com_Logo.png"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">12 coupons</p>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card storesCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//images/a/Ancestry_com_Logo.png"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">12 coupons</p>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card storesCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//images/a/Ancestry_com_Logo.png"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">12 coupons</p>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card storesCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//images/a/Ancestry_com_Logo.png"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">12 coupons</p>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="card storesCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//images/a/Ancestry_com_Logo.png"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <p class="card-text text-center">12 coupons</p>
+          </div>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+  <br /><br /><br />
+  <div class="container">
+    <p class="fs-4 fw-bold mb-1">Best Offers</p>
+    <p class="fs-5">Working promo codes for instant savings</p>
+    <br />
+    <div class="row">
+      <div class="col-sm-12 col-md-3">
+        <div class="card bestOffersCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//602x316_Sennheiser_1.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="d-flex w-100 justify-content-between">
+              <small>Deal</small>
+              <small class="text-muted">Office Depot</small>
+            </div>
+            <h6 class="mb-1 pt-1 fw-semibold">$500 OFF</h6>
+            <p class="mb-1 bestDealDescription">
+              Spend over $150 and score a $30 Gift card
+            </p>
+            <br />
+            <small><span class="fw-semibold">Expiry Date:</span> Aug 5</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="card bestOffersCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//officedepot_602x316_2.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="d-flex w-100 justify-content-between">
+              <small>Deal</small>
+              <small class="text-muted">Office Depot</small>
+            </div>
+            <h6 class="mb-1 pt-1 fw-semibold">$500 OFF</h6>
+            <p class="mb-1 bestDealDescription">
+              Spend over $150 and score a $30 Gift card
+            </p>
+            <br />
+            <small><span class="fw-semibold">Expiry Date:</span> Aug 5</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="card bestOffersCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//602x316_lordTAylor_1.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="d-flex w-100 justify-content-between">
+              <small>Deal</small>
+              <small class="text-muted">Office Depot</small>
+            </div>
+            <h6 class="mb-1 pt-1 fw-semibold">$500 OFF</h6>
+            <p class="mb-1 bestDealDescription">
+              Spend over $150 and score a $30 Gift card
+            </p>
+            <br />
+            <small><span class="fw-semibold">Expiry Date:</span> Aug 5</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="card bestOffersCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//602x316_4wp--1-_1.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="d-flex w-100 justify-content-between">
+              <small>Deal</small>
+              <small class="text-muted">Office Depot</small>
+            </div>
+            <h6 class="mb-1 pt-1 fw-semibold">$500 OFF</h6>
+            <p class="mb-1 bestDealDescription">
+              Spend over $150 and score a $30 Gift card
+            </p>
+            <br />
+            <small><span class="fw-semibold">Expiry Date:</span> Aug 5</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="card bestOffersCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//602x316_Express_1.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="d-flex w-100 justify-content-between">
+              <small>Deal</small>
+              <small class="text-muted">Office Depot</small>
+            </div>
+            <h6 class="mb-1 pt-1 fw-semibold">$500 OFF</h6>
+            <p class="mb-1 bestDealDescription">
+              Spend over $150 and score a $30 Gift card
+            </p>
+            <br />
+            <small><span class="fw-semibold">Expiry Date:</span> Aug 5</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="card bestOffersCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//allsaints_602x316_1.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="d-flex w-100 justify-content-between">
+              <small>Deal</small>
+              <small class="text-muted">Office Depot</small>
+            </div>
+            <h6 class="mb-1 pt-1 fw-semibold">$500 OFF</h6>
+            <p class="mb-1 bestDealDescription">
+              Spend over $150 and score a $30 Gift card
+            </p>
+            <br />
+            <small><span class="fw-semibold">Expiry Date:</span> Aug 5</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="card bestOffersCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//J.Crew_602x316_Aug_2.jpeg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="d-flex w-100 justify-content-between">
+              <small>Deal</small>
+              <small class="text-muted">Office Depot</small>
+            </div>
+            <h6 class="mb-1 pt-1 fw-semibold">$500 OFF</h6>
+            <p class="mb-1 bestDealDescription">
+              Spend over $150 and score a $30 Gift card
+            </p>
+            <br />
+            <small><span class="fw-semibold">Expiry Date:</span> Aug 5</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <div class="card bestOffersCard">
+          <img
+            src="https://coupons.businessinsider.com/images/256x//Boohooman_602_316_NoLogo_1.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="d-flex w-100 justify-content-between">
+              <small>Deal</small>
+              <small class="text-muted">Office Depot</small>
+            </div>
+            <h6 class="mb-1 pt-1 fw-semibold">$500 OFF</h6>
+            <p class="mb-1 bestDealDescription">
+              Spend over $150 and score a $30 Gift card
+            </p>
+            <br />
+            <small><span class="fw-semibold">Expiry Date:</span> Aug 5</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br /><br /><br />
+</div>
