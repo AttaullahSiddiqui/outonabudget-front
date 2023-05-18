@@ -8,6 +8,13 @@ import SwiperCore, {
 } from 'swiper';
 SwiperCore.use([Pagination, Navigation]);
 
+import {
+  faFile,
+  faCalendar,
+  faUser,
+  faUserCircle,
+} from '@fortawesome/free-solid';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -21,6 +28,7 @@ export class HomeComponent implements OnInit {
   mobile: Boolean = false;
   noResult = false;
   storeArray = null;
+  faEnvelope = faEnvelope;
   config: SwiperOptions = {
     slidesPerView: 3,
     spaceBetween: 30,
