@@ -127,3 +127,47 @@ div.absoluteHeader > p.card-text {
   font-weight: bold;
   text-transform: capitalize;
 }
+fa-icon.largeBlueIcons {
+  transform: scale(2.5);
+  color: #285372;
+}
+input#subscriptionInput:focus {
+  border: none;
+  // border:2px solid #212529 !important;
+  // border-radius: 0 !important;
+  box-shadow: none;
+}
+input#subscriptionInput {
+  border-radius: 0 !important;
+}
+button#subscription-box{
+       font-size: 1.1em !important;
+    letter-spacing: 0.1em;
+}
+ul.horizontalNav > li{
+  color: #285372;
+  border-color: #285372;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-right: 12px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+ul.horizontalNav > li.active{
+  color: white;
+  border-color: #285372;
+  background-color: #285372;
+}
+.w-40{
+  width: 40% !important;
+}
+nav.footerNav > a{
+  color: #111111;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.03em;
+  cursor: pointer;
+}
+nav.footerNav > a:hover{
+  text-decoration: underline;
+}

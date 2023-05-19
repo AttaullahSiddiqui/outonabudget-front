@@ -7,13 +7,13 @@ import SwiperCore, {
   Autoplay,
 } from 'swiper';
 SwiperCore.use([Pagination, Navigation]);
-
 import {
-  faFile,
-  faCalendar,
-  faUser,
+  faGear,
+  faStore,
+  faTags,
   faUserCircle,
-} from '@fortawesome/free-solid';
+  faEnvelope,
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -28,6 +28,10 @@ export class HomeComponent implements OnInit {
   mobile: Boolean = false;
   noResult = false;
   storeArray = null;
+  faSettingIcon = faGear;
+  faStoreIcon = faStore;
+  faTagIcon = faTags;
+  faUserIcon = faUserCircle;
   faEnvelope = faEnvelope;
   config: SwiperOptions = {
     slidesPerView: 3,
