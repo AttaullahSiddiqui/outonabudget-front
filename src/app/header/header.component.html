@@ -48,7 +48,15 @@
   </ng-template>
 </swiper> -->
 <nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container-fluid">
+  <div class="container">
+    <button
+      type="button"
+      id="offCanvasToggler"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#sideMenuCanvas"
+    >
+      <fa-icon [icon]="faMenuIcon"></fa-icon>
+    </button>
     <a class="navbar-brand ms-auto me-auto" href="">OutOnABudget</a>
     <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -83,7 +91,56 @@
     </div> -->
   </div>
 </nav>
-
+<div
+  class="offcanvas offcanvas-start px-4 py-4"
+  tabindex="-1"
+  id="sideMenuCanvas"
+  data-bs-scroll="true"
+>
+  <div class="offcanvas-header">
+    <h4 class="offcanvas-title fw-semibold">OutOnABudget</h4>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-group mt-2">
+      <li
+        class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
+      >
+        <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
+        <span>BUSINESS</span>
+      </li>
+      <li
+        class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
+      >
+        <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
+        <span>LIFE</span>
+      </li>
+      <li
+        class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
+      >
+        <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
+        <span>NEWS</span>
+      </li>
+      <li
+        class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
+      >
+        <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
+        <span>REVIEWS</span>
+      </li>
+      <li
+        class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
+      >
+        <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
+        <span>ALL</span>
+      </li>
+    </ul>
+  </div>
+</div>
 <hr class="my-0" />
 
 <div class="container">

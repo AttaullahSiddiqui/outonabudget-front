@@ -10,6 +10,7 @@ import SwiperCore, {
   EffectFade,
 } from 'swiper';
 SwiperCore.use([Pagination, Navigation, EffectFade, Autoplay]);
+import { faBars, faAdd } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -18,6 +19,8 @@ SwiperCore.use([Pagination, Navigation, EffectFade, Autoplay]);
   encapsulation: ViewEncapsulation.None,
 })
 export class HeaderComponent implements OnInit {
+  faMenuIcon = faBars;
+  faAdd = faAdd;
   config: SwiperOptions = {
     slidesPerView: 1,
     autoplay: {
@@ -44,7 +47,7 @@ export class HeaderComponent implements OnInit {
   };
   slideArray = null;
   smallScreen: Boolean = false;
-  
+
   constructor(private _dataService: DataService, private router: Router) {}
 
   ngOnInit(): void {

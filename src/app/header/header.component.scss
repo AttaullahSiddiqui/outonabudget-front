@@ -19,3 +19,22 @@ li.nav-item > a.nav-link {
   padding-left: 22px !important;
   padding-right: 22px !important;
 }
+button#offCanvasToggler{
+  background: transparent;
+  border: none;
+}
+button#offCanvasToggler > fa-icon{
+  font-size: 1.4em !important;
+}
+li.sideMenuListItem{
+  line-height: 5em;
+}
+li.sideMenuListItem > span{
+  font-weight: 600;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+}
+li.sideMenuListItem > fa-icon{
+  font-size: 1.5em;
+  color: #096ffa;
+}
