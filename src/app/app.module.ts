@@ -18,6 +18,12 @@ import {
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CategoriesComponent } from './categories/categories.component';
+import { StoresComponent } from './stores/stores.component';
+import { BlogsComponent } from './blogs/blogs.component';
+import { AboutComponent } from './about/about.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { TermsandconditionComponent } from './termsandcondition/termsandcondition.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +33,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HomeComponent,
     SanitizeHtmlPipe,
     SortbyPipe,
+    CategoriesComponent,
+    StoresComponent,
+    BlogsComponent,
+    AboutComponent,
+    PrivacyComponent,
+    TermsandconditionComponent,
   ],
   imports: [
     BrowserModule,

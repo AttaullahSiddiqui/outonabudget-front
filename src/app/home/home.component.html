@@ -116,7 +116,7 @@
   <br />
   <br />
   <div class="container">
-    <p class="fs-4 fw-bold mb-1">Free Promo Codes</p>
+    <p class="fs-4 fw-bold mb-1">Recent Blogs</p>
     <p class="fs-5">Our best deals and biggest savings</p>
     <br />
     <swiper
@@ -125,7 +125,7 @@
       (swiper)="onSwiper($event)"
       #newSwiper
     >
-      <ng-template swiperSlide>
+      <!-- <ng-template swiperSlide>
         <div class="card elevatedCard">
           <img src="../../assets/dummyimages/cp1.jpg" class="card-img-top" />
           <div class="card-body">
@@ -148,6 +148,27 @@
                   ><span class="fw-semibold">Expiry Date:</span> Aug 5</small
                 >
               </div>
+            </div>
+          </div>
+        </div>
+      </ng-template> -->
+      <ng-template swiperSlide>
+        <div class="card elevatedCard">
+          <img src="../../assets/dummyimages/cp1.jpg" class="card-img-top" />
+          <div class="card-body">
+            <div class="d-flex">
+              <div class="d-flex w-100 justify-content-between">
+                <small><b>Danish</b> wrote</small>
+                <small class="text-muted">Aug 15</small>
+              </div>
+              <h6 class="mb-1 pt-1 fw-semibold">First Blog heading tester</h6>
+              <p class="mb-1 couponDescription">
+                Get Up to $20 Off with This Walmart Coupon Code Get Up to $20
+                Off with This Walmart Coupon Code Get Up to $20 Off with This
+                Walmart Coupon Code
+              </p>
+              <br />
+              <small><span class="fw-semibold">Expiry Date:</span> Aug 5</small>
             </div>
           </div>
         </div>
@@ -1405,10 +1426,10 @@
     </div>
     <br /><br />
   </div>
-  <br />
-  <br />
-  <div class="extraXpadding w-40 ms-auto me-auto mt-3">
-    <h4 class="fw-bold">Shop More, Spend Less with OutOnaBudget</h4>
+  <!-- <br /> -->
+  <!-- <br /> -->
+  <div class="extraXpadding w-40 ms-auto me-auto">
+    <!-- <h4 class="fw-bold">Shop More, Spend Less with OutOnaBudget</h4>
     <h5 class="fw-bold">Amazing deals at your fingertips</h5>
     <br />
     <p class="fs-6">
@@ -1425,8 +1446,8 @@
     </p>
     <br />
     <br />
-    <br />
-    <div class="card">
+    <br /> -->
+    <!-- <div class="card">
       <div class="card-body">
         <div class="row">
           <div class="col-8 text-start">
@@ -1436,18 +1457,18 @@
           <div class="col-4 text-end"></div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
-  <br />
-  <br />
+  <!-- <br /> -->
+  <!-- <br /> -->
   <div class="container">
     <nav class="nav footerNav border-top border-bottom">
-      <a class="nav-link">About</a>
-      <a class="nav-link">Help</a>
-      <a class="nav-link">Contact us</a>
-      <a class="nav-link">Privacy Policy</a>
-      <a class="nav-link">Terms of Service</a>
-      <a class="nav-link">Manage cookies</a>
+      <a class="nav-link" routerLink="/about">About</a>
+      <!-- <a class="nav-link">Help</a>
+      <a class="nav-link">Contact us</a> -->
+      <a class="nav-link" routerLink="/privacy">Privacy Policy</a>
+      <a class="nav-link" routerLink="/termsandconditions">Terms of Service</a>
+      <!-- <a class="nav-link">Manage cookies</a> -->
     </nav>
   </div>
 </div>
