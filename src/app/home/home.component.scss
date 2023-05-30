@@ -88,13 +88,13 @@ div.elevatedCard div.card-body {
   width: 96%;
   margin: 0 auto;
   position: relative;
-  top: -8vh;
+  top: -3vh;
   background-color: white;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07);
 }
 div.elevatedCard p.couponDescription,
 div.bestOffersCard p.bestDealDescription {
-  font-size: 0.95rem !important;
+  font-size: 1rem !important;
   font-weight: 400;
   margin-top: 5px;
   text-transform: capitalize;
@@ -171,4 +171,8 @@ nav.footerNav > a{
 nav.footerNav > a:hover{
   text-decoration: underline;
   color: #111111;
+}
+fa-icon.arrowRight{
+  margin-left: 5px;
+  vertical-align: inherit;
 }

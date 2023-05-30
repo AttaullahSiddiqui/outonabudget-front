@@ -13,6 +13,7 @@ import {
   faTags,
   faUserCircle,
   faEnvelope,
+  faArrowRightLong,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -33,6 +34,7 @@ export class HomeComponent implements OnInit {
   faTagIcon = faTags;
   faUserIcon = faUserCircle;
   faEnvelope = faEnvelope;
+  faArrowRightLong = faArrowRightLong;
   config: SwiperOptions = {
     slidesPerView: 3,
     spaceBetween: 30,
