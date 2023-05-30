@@ -1,19 +1,30 @@
-fa-icon.socialIconsFooter{
-    transform: scale(3);
-    color: black;
-    font-size: 1.2em;
+fa-icon.socialIconsFooter {
+  transform: scale(3);
+  color: black;
+  font-size: 1.2em;
 }
-fa-icon.socialIconsFooter > svg.fa-border{
-    border-width: 1px;
-    border-radius: 50%;
-    padding: 14px;
-    border-color: #185f7d;
+fa-icon.socialIconsFooter > svg.fa-border {
+  border-width: 1px;
+  border-radius: 50%;
+  padding: 14px;
+  border-color: #185f7d;
 }
-fa-icon.appStoresIcon{
-    font-size: 1.7em;
-    margin-right: 10px;
+fa-icon.appStoresIcon {
+  font-size: 1.7em;
+  margin-right: 10px;
 }
-button.appStoresButton{
-    font-size: 1em;
-    height: 80px;
+button.appStoresButton {
+  font-size: 1em;
+  height: 80px;
+}
+nav.footerNav > a {
+  color: #111111;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.03em;
+  cursor: pointer;
+}
+nav.footerNav > a:hover {
+  text-decoration: underline;
+  color: #111111;
 }
