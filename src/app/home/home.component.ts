@@ -35,38 +35,42 @@ export class HomeComponent implements OnInit {
   faUserIcon = faUserCircle;
   faEnvelope = faEnvelope;
   faArrowRightLong = faArrowRightLong;
-  config: SwiperOptions = {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
-    autoplay: false,
-    navigation: true,
-    pagination: { clickable: true },
-    scrollbar: false,
-    direction: 'horizontal',
-    loop: true,
-    loopFillGroupWithBlank: true,
-    grabCursor: true,
-  };
-  config2: SwiperOptions = {
-    slidesPerView: 6,
-    spaceBetween: 25,
-    slidesPerGroup: 6,
-    autoplay: false,
-    navigation: true,
-    pagination: { clickable: true },
-    scrollbar: false,
-    direction: 'horizontal',
-    loop: true,
-    loopFillGroupWithBlank: true,
-    grabCursor: true,
-  };
-  couponsArray = null;
   smallScreen: Boolean = false;
+  config: any;
+  config2: any;
+  couponsArray = null;
 
   constructor(private _dataService: DataService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (window.screen.width < 830) this.smallScreen = true;
+    this.config = {
+      slidesPerView: this.smallScreen ? 1 : 3,
+      spaceBetween: 30,
+      slidesPerGroup: this.smallScreen ? 1 : 3,
+      autoplay: false,
+      navigation: true,
+      pagination: { clickable: true },
+      scrollbar: false,
+      direction: 'horizontal',
+      loop: true,
+      loopFillGroupWithBlank: true,
+      grabCursor: true,
+    };
+    this.config2 = {
+      slidesPerView: this.smallScreen ? 1 : 6,
+      spaceBetween: 25,
+      slidesPerGroup: this.smallScreen ? 1 : 6,
+      autoplay: false,
+      navigation: true,
+      // pagination: { clickable: true },
+      scrollbar: false,
+      direction: 'horizontal',
+      loop: true,
+      loopFillGroupWithBlank: true,
+      grabCursor: true,
+    };
+  }
 
   searchFunc(queri: any) {
     if (!queri) return;

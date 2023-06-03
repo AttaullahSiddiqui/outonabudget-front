@@ -24,6 +24,7 @@ export class FooterComponent implements OnInit {
   faInstagram = faInstagram;
   faApple = faApple;
   faGooglePlay = faGooglePlay;
+  
   constructor(private _dataService: DataService) {}
 
   ngOnInit(): void {}

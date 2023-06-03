@@ -128,11 +128,17 @@ input#subscriptionInput:focus {
 input#subscriptionInput {
   border-radius: 0 !important;
 }
-button#subscription-box{
-       font-size: 1.1em !important;
-    letter-spacing: 0.1em;
+button#subscription-box {
+  font-size: 1.1em !important;
+  letter-spacing: 0.1em;
 }
-ul.horizontalNav > li{
+ul.horizontalNav{
+display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 96vw;
+}
+ul.horizontalNav > li {
   color: #285372;
   border-color: #285372;
   text-transform: uppercase;
@@ -140,16 +146,18 @@ ul.horizontalNav > li{
   margin-right: 12px;
   font-size: 0.9em;
   cursor: pointer;
+  min-width: 120px;
+  margin-bottom: 9px;
 }
-ul.horizontalNav > li.active{
+ul.horizontalNav > li.active {
   color: white;
   border-color: #285372;
   background-color: #285372;
 }
-.w-40{
+.w-40 {
   width: 40% !important;
 }
-fa-icon.arrowRight{
+fa-icon.arrowRight {
   margin-left: 5px;
   vertical-align: inherit;
 }

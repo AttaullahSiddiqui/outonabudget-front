@@ -38,6 +38,15 @@ li.sideMenuListItem > fa-icon{
   font-size: 1.5em;
   color: #096ffa;
 }
+div#navbarNav{
+  overflow-x: scroll;
+}
+div#navbarNav::-webkit-scrollbar{
+ display: none;
+}
 ul.navbar-nav > li.nav-item:hover{
   cursor: pointer;
+}
+ul.navbar-nav > li.nav-item{
+  width: max-content;;
 }
