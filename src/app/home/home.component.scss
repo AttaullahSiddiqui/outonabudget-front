@@ -80,18 +80,6 @@ swiper.mySwiper {
   left: 0;
   padding-right: 5px;
 }
-div.elevatedCard {
-  background-color: transparent;
-  border: none;
-}
-div.elevatedCard div.card-body {
-  width: 96%;
-  margin: 0 auto;
-  position: relative;
-  top: -3vh;
-  background-color: white;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07);
-}
 div.elevatedCard p.couponDescription,
 div.bestOffersCard p.bestDealDescription {
   font-size: 1rem !important;

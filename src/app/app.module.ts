@@ -24,6 +24,9 @@ import { BlogsComponent } from './blogs/blogs.component';
 import { AboutComponent } from './about/about.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsandconditionComponent } from './termsandcondition/termsandcondition.component';
+import { BlogComponent } from './blog/blog.component';
+import { CategoryComponent } from './category/category.component';
+import { StoreComponent } from './store/store.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +42,9 @@ import { TermsandconditionComponent } from './termsandcondition/termsandconditio
     AboutComponent,
     PrivacyComponent,
     TermsandconditionComponent,
+    BlogComponent,
+    CategoryComponent,
+    StoreComponent,
   ],
   imports: [
     BrowserModule,

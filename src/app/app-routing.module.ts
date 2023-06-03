@@ -8,6 +8,9 @@ import { BlogsComponent } from './blogs/blogs.component';
 import { TermsandconditionComponent } from './termsandcondition/termsandcondition.component';
 import { AboutComponent } from './about/about.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { BlogComponent } from './blog/blog.component';
+import { StoreComponent } from './store/store.component';
+import { CategoryComponent } from './category/category.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, canActivate: [AuthService] },
@@ -16,11 +19,11 @@ const routes: Routes = [
     component: CategoriesComponent,
     canActivate: [AuthService],
   },
-  // {
-  //   path: 'category/:id',
-  //   component: CategoryComponent,
-  //   canActivate: [AuthService],
-  // },
+  {
+    path: 'category/:id',
+    component: CategoryComponent,
+    canActivate: [AuthService],
+  },
   // {
   //   path: 'services',
   //   component: ServicesComponent,
@@ -31,13 +34,13 @@ const routes: Routes = [
     component: StoresComponent,
     canActivate: [AuthService],
   },
-  // {
-  //   path: 'stores/:id',
-  //   component: StoreComponent,
-  //   canActivate: [AuthService],
-  // },
+  {
+    path: 'store/:id',
+    component: StoreComponent,
+    canActivate: [AuthService],
+  },
   { path: 'blogs', component: BlogsComponent, canActivate: [AuthService] },
-  // { path: 'blog/:id', component: BlogComponent, canActivate: [AuthService] },
+  { path: 'blog/:id', component: BlogComponent, canActivate: [AuthService] },
   { path: 'about', component: AboutComponent, canActivate: [AuthService] },
   { path: 'privacy', component: PrivacyComponent, canActivate: [AuthService] },
   {
