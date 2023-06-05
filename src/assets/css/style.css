@@ -30,7 +30,7 @@ h5,
 h6 {
   font-family: grotesquehead;
 }
-p {
+p,ul>li {
   font-family: grotesqueregular;
 }
 .cursor-pointer {

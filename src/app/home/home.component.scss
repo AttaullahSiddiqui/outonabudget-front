@@ -80,8 +80,7 @@ swiper.mySwiper {
   left: 0;
   padding-right: 5px;
 }
-div.elevatedCard p.couponDescription,
-div.bestOffersCard p.bestDealDescription {
+div.elevatedCard p.couponDescription{
   font-size: 1rem !important;
   font-weight: 400;
   margin-top: 5px;
@@ -160,4 +159,10 @@ ul.horizontalNav > li.active {
 fa-icon.arrowRight {
   margin-left: 5px;
   vertical-align: inherit;
+}
+img.mainFrontImage{
+  width: 86vw;
+  margin:0 auto;
+  position: relative;
+  left: 7vw;
 }
