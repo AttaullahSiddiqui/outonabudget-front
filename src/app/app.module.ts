@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SwiperModule } from 'swiper/angular';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +28,7 @@ import { TermsandconditionComponent } from './termsandcondition/termsandconditio
 import { BlogComponent } from './blog/blog.component';
 import { CategoryComponent } from './category/category.component';
 import { StoreComponent } from './store/store.component';
+import { CategoryblogComponent } from './categoryblog/categoryblog.component';
 
 @NgModule({
   declarations: [
@@ -45,12 +47,14 @@ import { StoreComponent } from './store/store.component';
     BlogComponent,
     CategoryComponent,
     StoreComponent,
+    CategoryblogComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     CommonModule,
+    NgSelectModule,
     FormsModule,
     HttpClientModule,
     FontAwesomeModule,

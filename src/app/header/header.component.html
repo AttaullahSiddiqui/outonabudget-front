@@ -57,7 +57,12 @@
     >
       <fa-icon [icon]="faMenuIcon"></fa-icon>
     </button>
-    <a class="navbar-brand ms-auto me-auto" href="" [ngClass]="{'fs-1': !smallScreen, 'fs-3': smallScreen}">OutOnABudget</a>
+    <a
+      class="navbar-brand ms-auto me-auto"
+      href=""
+      [ngClass]="{ 'fs-1': !smallScreen, 'fs-3': smallScreen }"
+      >OutOnABudget</a
+    >
     <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button> -->
@@ -104,30 +109,39 @@
       class="btn-close"
       data-bs-dismiss="offcanvas"
       aria-label="Close"
+      id="canvasCloseBtn"
     ></button>
   </div>
   <div class="offcanvas-body">
     <ul class="list-group mt-2">
       <li
         class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
+        [routerLink]="['/blogs', 'travel']"
+        (click)="closeOffCanvas()"
       >
         <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
         <span>TRAVEL</span>
       </li>
       <li
         class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
+        [routerLink]="['/blogs', 'life']"
+        (click)="closeOffCanvas()"
       >
         <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
         <span>LIFE</span>
       </li>
       <li
         class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
+        [routerLink]="['/blogs', 'beauty']"
+        (click)="closeOffCanvas()"
       >
         <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
         <span>BEAUTY</span>
       </li>
       <li
         class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
+        [routerLink]="['/blogs', 'pets']"
+        (click)="closeOffCanvas()"
       >
         <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
         <span>PETS</span>
@@ -191,4 +205,4 @@
     </div>
   </nav>
 </div>
-<hr class="my-0">
+<hr class="my-0" />

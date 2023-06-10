@@ -1,2 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "swiper/css/bundle";
+@import "~@ng-select/ng-select/themes/material.theme.css";
+// @import "~@ng-select/ng-select/themes/default.theme.css";
+.ng-select .ng-select-container .ng-value-container .ng-input > input {
+  margin-bottom: 0 !important;
+  padding-left: 10px !important;
+}
+.ng-select .ng-select-container .ng-value-container .ng-placeholder {
+  background: #e4e7ea !important;
+}

@@ -11,6 +11,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { BlogComponent } from './blog/blog.component';
 import { StoreComponent } from './store/store.component';
 import { CategoryComponent } from './category/category.component';
+import { CategoryblogComponent } from './categoryblog/categoryblog.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, canActivate: [AuthService] },
@@ -40,6 +41,7 @@ const routes: Routes = [
     canActivate: [AuthService],
   },
   { path: 'blogs', component: BlogsComponent, canActivate: [AuthService] },
+  { path: 'blogs/:id', component: CategoryblogComponent, canActivate: [AuthService] },
   { path: 'blog/:id', component: BlogComponent, canActivate: [AuthService] },
   { path: 'about', component: AboutComponent, canActivate: [AuthService] },
   { path: 'privacy', component: PrivacyComponent, canActivate: [AuthService] },

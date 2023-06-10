@@ -57,6 +57,12 @@ export class HeaderComponent implements OnInit {
       else this._dataService.errorToast(res.message);
     });
   }
+  closeOffCanvas(){
+    var ggg = document.querySelector('#canvasCloseBtn') as HTMLElement;
+    setTimeout(() => {
+      ggg.click();
+    }, 200);
+  }
   onSwiper(swiper: any) {
     swiper.update();
   }

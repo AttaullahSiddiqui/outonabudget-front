@@ -6,48 +6,191 @@
     <br />
     <br />
     <div class="row">
-      <div class="col-md-4 col-sm-12">
-        <label for="categorySelect" class="form-label fw-bold fs-5"
-          >Select Category</label
+      <div class="col-md-3 col-sm-12">
+        <ng-select
+          [items]="categories"
+          bindLabel="name"
+          bindValue="id"
+          [(ngModel)]="selectedCategory"
+          [closeOnSelect]="true"
+          [searchable]="true"
+          appearance="outline"
+          placeholder="{{ myPlaceHolder1 }}"
+          [hideSelected]="true"
+          dropdownPosition="bottom"
+          (change)="secondaryFunc(selectedCategory)"
         >
-        <input
-          class="form-control"
-          list="categoriesList"
-          id="categorySelect"
-          placeholder="Type to search..."
-        />
-        <datalist id="categoriesList">
-          <option value="San Francisco"></option>
-          <option value="New York"></option>
-          <option value="Seattle"></option>
-          <option value="Los Angeles"></option>
-          <option value="Chicago"></option>
-          <option value="San Francisco"></option>
-          <option value="New York"></option>
-          <option value="Seattle"></option>
-          <option value="Los Angeles"></option>
-          <option value="Chicago"></option>
-          <option value="San Francisco"></option>
-          <option value="New York"></option>
-          <option value="Seattle"></option>
-          <option value="Los Angeles"></option>
-          <option value="Chicago"></option>
-          <option value="San Francisco"></option>
-          <option value="New York"></option>
-          <option value="Seattle"></option>
-          <option value="Los Angeles"></option>
-          <option value="Chicago"></option>
-        </datalist>
+          <!-- <ng-option
+            [value]="cat.value.categoryURL"
+            *ngFor="let cat of categoryArr | keyvalue"
+          >
+            {{ cat.value.name }}
+          </ng-option> -->
+        </ng-select>
       </div>
-      <div class="col-md-8 col-sm-12">
+      <div class="col-md-9 col-sm-12 ps-5">
         <div class="row">
           <div
-            class="col-sm-12 col-md-3 mb-4 cursor-pointer"
+            class="col-sm-12 col-md-2 mb-4 cursor-pointer"
             [routerLink]="['/store', 'storename']"
           >
-            <div class="card categoriesCard shadow">
+            <div class="card categoryCard shadow">
               <img
                 src="https://coupons.businessinsider.com/images/256x//images/a/Ancestry_com_Logo.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">Category</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-2 mb-4 cursor-pointer"
+            [routerLink]="['/store', 'storename']"
+          >
+            <div class="card categoryCard shadow">
+              <img
+                src="https://coupons.businessinsider.com/images/256x//images/u/UberEats_Logo.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">Category</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-2 mb-4 cursor-pointer"
+            [routerLink]="['/store', 'storename']"
+          >
+            <div class="card categoryCard shadow">
+              <img
+                src="https://coupons.businessinsider.com/images/256x//images/b/Bath_and_Body_Works.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">Category</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-2 mb-4 cursor-pointer"
+            [routerLink]="['/store', 'storename']"
+          >
+            <div class="card categoryCard shadow">
+              <img
+                src="https://coupons.businessinsider.com/images/256x//images/a/Ancestry_com_Logo.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">Category</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-2 mb-4 cursor-pointer"
+            [routerLink]="['/store', 'storename']"
+          >
+            <div class="card categoryCard shadow">
+              <img
+                src="https://coupons.businessinsider.com/images/256x//images/u/UberEats_Logo.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">Category</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-2 mb-4 cursor-pointer"
+            [routerLink]="['/store', 'storename']"
+          >
+            <div class="card categoryCard shadow">
+              <img
+                src="https://coupons.businessinsider.com/images/256x//images/b/Bath_and_Body_Works.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">Category</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-2 mb-4 cursor-pointer"
+            [routerLink]="['/store', 'storename']"
+          >
+            <div class="card categoryCard shadow">
+              <img
+                src="https://coupons.businessinsider.com/images/256x//images/a/Ancestry_com_Logo.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">Category</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-2 mb-4 cursor-pointer"
+            [routerLink]="['/store', 'storename']"
+          >
+            <div class="card categoryCard shadow">
+              <img
+                src="https://coupons.businessinsider.com/images/256x//images/u/UberEats_Logo.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">Category</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-2 mb-4 cursor-pointer"
+            [routerLink]="['/store', 'storename']"
+          >
+            <div class="card categoryCard shadow">
+              <img
+                src="https://coupons.businessinsider.com/images/256x//images/b/Bath_and_Body_Works.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">Category</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-2 mb-4 cursor-pointer"
+            [routerLink]="['/store', 'storename']"
+          >
+            <div class="card categoryCard shadow">
+              <img
+                src="https://coupons.businessinsider.com/images/256x//images/a/Ancestry_com_Logo.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">Category</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-2 mb-4 cursor-pointer"
+            [routerLink]="['/store', 'storename']"
+          >
+            <div class="card categoryCard shadow">
+              <img
+                src="https://coupons.businessinsider.com/images/256x//images/u/UberEats_Logo.png"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">Category</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-2 mb-4 cursor-pointer"
+            [routerLink]="['/store', 'storename']"
+          >
+            <div class="card categoryCard shadow">
+              <img
+                src="https://coupons.businessinsider.com/images/256x//images/b/Bath_and_Body_Works.png"
                 class="card-img-top"
               />
               <div class="card-body">
