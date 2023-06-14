@@ -17,12 +17,12 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  selector: 'app-media',
+  templateUrl: './media.component.html',
+  styleUrls: ['./media.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class HomeComponent implements OnInit {
+export class MediaComponent implements OnInit {
   switch = false;
   searchBox = null;
   isBusy: Boolean = false;
@@ -37,6 +37,8 @@ export class HomeComponent implements OnInit {
   faArrowRightLong = faArrowRightLong;
   smallScreen: Boolean = false;
   config: any;
+  config2: any;
+  couponsArray = null;
 
   constructor(private _dataService: DataService) {}
 
@@ -55,9 +57,37 @@ export class HomeComponent implements OnInit {
       loopFillGroupWithBlank: true,
       grabCursor: true,
     };
+    this.config2 = {
+      slidesPerView: this.smallScreen ? 1 : 6,
+      spaceBetween: 25,
+      slidesPerGroup: this.smallScreen ? 1 : 6,
+      autoplay: false,
+      navigation: true,
+      // pagination: { clickable: true },
+      scrollbar: false,
+      direction: 'horizontal',
+      loop: true,
+      loopFillGroupWithBlank: true,
+      grabCursor: true,
+    };
   }
-  changeTab(param: Number) {
-    this.switch = !this.switch;
+
+  searchFunc(queri: any) {
+    if (!queri) return;
+    this.noResult = false;
+    this.storeArray = null;
+    this._dataService
+      .fetchAPIWithLimit('/userDisplay/searchQuery', 10, queri, '')
+      .subscribe((res) => {
+        if (res.data) {
+          this.storeArray = res.data;
+        } else this.noResult = true;
+      });
+  }
+  focusOutFunc() {
+    setTimeout(() => {
+      this.switch = false;
+    }, 300);
   }
   onSwiper(swiper: any) {
     swiper.update();

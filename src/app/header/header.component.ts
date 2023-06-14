@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { DataService } from '../data.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, NavigationStart, Router } from '@angular/router';
 import SwiperCore, {
   SwiperOptions,
   Navigation,
@@ -11,6 +11,7 @@ import SwiperCore, {
 } from 'swiper';
 SwiperCore.use([Pagination, Navigation, EffectFade, Autoplay]);
 import { faBars, faAdd } from '@fortawesome/free-solid-svg-icons';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -47,21 +48,28 @@ export class HeaderComponent implements OnInit {
   };
   slideArray = null;
   smallScreen: Boolean = false;
+  currentRoute: string = '';
 
   constructor(private _dataService: DataService, private router: Router) {}
 
   ngOnInit(): void {
+    this.router.events.forEach((event: any) => {
+      if (event instanceof NavigationStart) {
+        // console.log(event.url);
+        this.currentRoute = event.url;
+      }
+    });
     if (window.screen.width < 830) this.smallScreen = true;
     this._dataService.fetchAPI('/userDisplay/fetchSlides').subscribe((res) => {
       if (res.data) this.slideArray = res.data;
       else this._dataService.errorToast(res.message);
     });
   }
-  closeOffCanvas(){
+  closeOffCanvas() {
     var ggg = document.querySelector('#canvasCloseBtn') as HTMLElement;
     setTimeout(() => {
       ggg.click();
-    }, 200);
+    }, 100);
   }
   onSwiper(swiper: any) {
     swiper.update();

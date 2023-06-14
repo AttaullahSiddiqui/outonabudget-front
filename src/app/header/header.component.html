@@ -116,7 +116,53 @@
     <ul class="list-group mt-2">
       <li
         class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
+        routerLink="/media"
+        *ngIf="currentRoute == '/'"
+        (click)="closeOffCanvas()"
+      >
+        <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
+        <span>BUSINESS</span>
+      </li>
+      <li
+        class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
+        routerLink="/media"
+        *ngIf="currentRoute == '/'"
+        (click)="closeOffCanvas()"
+      >
+        <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
+        <span>LIFE</span>
+      </li>
+      <li
+        class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
+        routerLink="/media"
+        *ngIf="currentRoute == '/'"
+        (click)="closeOffCanvas()"
+      >
+        <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
+        <span>NEWS</span>
+      </li>
+      <li
+        class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
+        routerLink="/media"
+        *ngIf="currentRoute == '/'"
+        (click)="closeOffCanvas()"
+      >
+        <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
+        <span>REVIEWS</span>
+      </li>
+      <li
+        class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
+        routerLink="/media"
+        *ngIf="currentRoute == '/'"
+        (click)="closeOffCanvas()"
+      >
+        <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
+        <span>MEDIA</span>
+      </li>
+      <li
+        class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
         [routerLink]="['/blogs', 'travel']"
+        *ngIf="currentRoute != '/'"
         (click)="closeOffCanvas()"
       >
         <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
@@ -125,6 +171,7 @@
       <li
         class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
         [routerLink]="['/blogs', 'life']"
+        *ngIf="currentRoute != '/'"
         (click)="closeOffCanvas()"
       >
         <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
@@ -133,6 +180,7 @@
       <li
         class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
         [routerLink]="['/blogs', 'beauty']"
+        *ngIf="currentRoute != '/'"
         (click)="closeOffCanvas()"
       >
         <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
@@ -141,23 +189,25 @@
       <li
         class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
         [routerLink]="['/blogs', 'pets']"
+        *ngIf="currentRoute != '/'"
         (click)="closeOffCanvas()"
       >
         <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
         <span>PETS</span>
       </li>
-      <li
+      <!-- <li
         class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
+        *ngIf="currentRoute != '/'"
       >
         <fa-icon [icon]="faAdd" class="me-4"></fa-icon>
         <span>COUPONS</span>
-      </li>
+      </li> -->
     </ul>
   </div>
 </div>
 <hr class="my-0" />
 
-<div class="container">
+<div class="container" *ngIf="currentRoute != '/'">
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <!-- <button

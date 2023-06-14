@@ -30,13 +30,17 @@ h5,
 h6 {
   font-family: grotesquehead;
 }
-p,ul>li {
+p,
+ul > li , span{
   font-family: grotesqueregular;
 }
 .cursor-pointer {
   cursor: pointer;
 }
-
+.hover-underline:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 ::-webkit-scrollbar {
   width: 10px !important;
 }

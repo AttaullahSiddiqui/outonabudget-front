@@ -29,6 +29,7 @@ import { BlogComponent } from './blog/blog.component';
 import { CategoryComponent } from './category/category.component';
 import { StoreComponent } from './store/store.component';
 import { CategoryblogComponent } from './categoryblog/categoryblog.component';
+import { MediaComponent } from './media/media.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { CategoryblogComponent } from './categoryblog/categoryblog.component';
     CategoryComponent,
     StoreComponent,
     CategoryblogComponent,
+    MediaComponent,
   ],
   imports: [
     BrowserModule,
