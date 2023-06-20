@@ -19,6 +19,10 @@
   src: url("../fonts/grotesque/LabGrotesque-Regular.ttf");
 }
 @font-face {
+  font-family: grotesquebold;
+  src: url("../fonts/grotesque/LabGrotesque-Bold.ttf");
+}
+@font-face {
   font-family: tiempostregular;
   src: url("../fonts/tiempos/TiemposText-Regular.ttf");
 }
@@ -31,7 +35,8 @@ h6 {
   font-family: grotesquehead;
 }
 p,
-ul > li , span{
+ul > li,
+span {
   font-family: grotesqueregular;
 }
 .cursor-pointer {

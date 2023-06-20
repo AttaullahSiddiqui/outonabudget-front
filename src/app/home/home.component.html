@@ -20,7 +20,7 @@
     </ul>
     <br />
     <br />
-    <div class="row">
+    <div class="row" *ngIf="!switch">
       <div class="col-md-5 col-sm-12 pe-4">
         <h2 class="fw-bolder fs-2">
           China’s economy is way more screwed than anyone thought
@@ -73,6 +73,61 @@
       <div class="col-md-7 col-sm-12 pe-4">
         <img
           src="https://i.insider.com/64877cd55dd05600196390b9?width=1000&format=jpeg&auto=webp"
+          class="newsImg"
+        />
+      </div>
+    </div>
+    <div class="row" *ngIf="switch">
+      <div class="col-md-5 col-sm-12 pe-4">
+        <h2 class="fw-bolder fs-2">It was a great week for the economy</h2>
+        <br />
+        <ul class="list-group newsList">
+          <li class="list-group-item">
+            New retail sales numbers, inflation, and a pause in rate hikes point
+            to a strong week in the economy.
+          </li>
+          <li class="list-group-item">
+            This data shows the economy may be on its way to balancing lowering
+            inflation with maintaining growth.
+          </li>
+          <li class="list-group-item">
+            Retail sales rose 0.3% from April to May as consumers spent more
+            across the board.
+          </li>
+        </ul>
+        <br />
+        <span
+          class="badge rounded-pill text-bg-primary py-2 px-3 cursor-pointer mb-3"
+          >READ MORE</span
+        >
+        <br />
+        <hr class="mb-0" />
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item fw-bolder hover-underline">
+            Putin warns the West of Russian tactical nukes being put in Belarus
+          </li>
+          <li class="list-group-item fw-bolder hover-underline">
+            Kourtney Kardashian surprised Travis Barker with pregnancy at
+            concert
+          </li>
+          <li class="list-group-item fw-bolder hover-underline">
+            Elon Musk asks: 'If I'm so smart, why did I pay so much for
+            Twitter?'
+          </li>
+          <li class="list-group-item fw-bolder hover-underline">
+            Stop quiet quitting and start 'quiet thriving' to boost your career
+          </li>
+          <li class="list-group-item fw-bolder hover-underline">
+            The out-of-office message you need if you have Juneteenth off
+          </li>
+          <li class="list-group-item fw-bolder hover-underline">
+            In Ukraine's counteroffensive, 'the big fireworks are still to come'
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-7 col-sm-12 pe-4">
+        <img
+          src="https://i.insider.com/6387af99d346c10018949a1b?width=1000&format=jpeg&auto=webp"
           class="newsImg"
         />
       </div>
