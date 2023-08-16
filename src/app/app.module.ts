@@ -30,6 +30,10 @@ import { CategoryComponent } from './category/category.component';
 import { StoreComponent } from './store/store.component';
 import { CategoryblogComponent } from './categoryblog/categoryblog.component';
 import { MediaComponent } from './media/media.component';
+import { NewsComponent } from './news/news.component';
+import { AllnewsComponent } from './allnews/allnews.component';
+import { NewsbycategoryComponent } from './newsbycategory/newsbycategory.component';
+import { SinglenewsComponent } from './singlenews/singlenews.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +54,10 @@ import { MediaComponent } from './media/media.component';
     StoreComponent,
     CategoryblogComponent,
     MediaComponent,
+    NewsComponent,
+    AllnewsComponent,
+    NewsbycategoryComponent,
+    SinglenewsComponent,
   ],
   imports: [
     BrowserModule,

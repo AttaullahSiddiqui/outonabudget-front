@@ -22,154 +22,201 @@
         <p class="mt-3 text-start fs-6">
           Save with our 30 active Casper coupon codes
         </p>
-        <div class="card pt-3 pb-2 px-2">
-          <div class="card-body text-start">
-            <h5 class="card-title">Casper Discount Summary</h5>
-            <br />
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <div class="d-flex justify-content-between fs-6">
-                  <span>Exclusive Offers</span>
-                  <span>1</span>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="d-flex justify-content-between fs-6">
-                  <span>Promo Codes</span>
-                  <span>8</span>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="d-flex justify-content-between fs-6">
-                  <span>Verified Offers</span>
-                  <span>7</span>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="d-flex justify-content-between fs-6">
-                  <span>New Coupons</span>
-                  <span>3</span>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="d-flex justify-content-between fs-6">
-                  <span>Total Offers</span>
-                  <span>30</span>
-                </div>
-              </li>
-            </ul>
+        <div *ngIf="!smallScreen">
+          <div class="card pt-3 pb-2 px-2">
+            <div class="card-body text-start">
+              <h5 class="card-title">Casper Discount Summary</h5>
+              <br />
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between fs-6">
+                    <span>Exclusive Offers</span>
+                    <span>1</span>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between fs-6">
+                    <span>Promo Codes</span>
+                    <span>8</span>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between fs-6">
+                    <span>Verified Offers</span>
+                    <span>7</span>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between fs-6">
+                    <span>New Coupons</span>
+                    <span>3</span>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between fs-6">
+                    <span>Total Offers</span>
+                    <span>30</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <br />
-        <div class="card py-3 px-2">
-          <div class="card-body text-start">
-            <h5 class="card-title">Save with adidas coupon codes on Reddit</h5>
-            <p class="card-text mt-3 fs-6">
-              Subreddits are a great place to source adidas coupon codes. You
-              can find subreddits dedicated explicitly to sneaker culture and
-              shopping. Reddit users frequently unload single-use coupons if
-              they cannot use them for themselves. These will be coupons near
-              the end of their validity.<br /><br />
-              You don't have to be a Redditor to read posts, but you must be one
-              to comment. To find these savings, go onto reddit.com. Search up
-              keywords like "adidas" followed by "coupon" or something
-              similar.<br /><br />
-              The coupons you find are often "first come first served." If
-              you're lucky and find one that works, be sure to use it quickly!
-              Otherwise, head back here for frequently updated coupons.
-            </p>
+          <br />
+          <div class="card py-3 px-2">
+            <div class="card-body text-start">
+              <h5 class="card-title">
+                Save with adidas coupon codes on Reddit
+              </h5>
+              <p class="card-text mt-3 fs-6">
+                Subreddits are a great place to source adidas coupon codes. You
+                can find subreddits dedicated explicitly to sneaker culture and
+                shopping. Reddit users frequently unload single-use coupons if
+                they cannot use them for themselves. These will be coupons near
+                the end of their validity.<br /><br />
+                You don't have to be a Redditor to read posts, but you must be
+                one to comment. To find these savings, go onto reddit.com.
+                Search up keywords like "adidas" followed by "coupon" or
+                something similar.<br /><br />
+                The coupons you find are often "first come first served." If
+                you're lucky and find one that works, be sure to use it quickly!
+                Otherwise, head back here for frequently updated coupons.
+              </p>
+            </div>
           </div>
-        </div>
-        <br />
-        <div class="card pt-3 pb-1 px-2">
-          <div class="card-body text-start">
-            <h5 class="card-title">Share It</h5>
-            <p class="card-text mt-4 fs-6">
-              <fa-icon
-                [icon]="faFacebook"
-                size="2x"
-                class="cursor-pointer fbIconColor me-3"
-              ></fa-icon>
-              <fa-icon
-                [icon]="faTwitter"
-                size="2x"
-                class="cursor-pointer twitterIconColor"
-              ></fa-icon>
-            </p>
+          <br />
+          <div class="card pt-3 pb-1 px-2">
+            <div class="card-body text-start">
+              <h5 class="card-title">Share It</h5>
+              <p class="card-text mt-4 fs-6">
+                <fa-icon
+                  [icon]="faFacebook"
+                  size="2x"
+                  class="cursor-pointer fbIconColor me-3"
+                ></fa-icon>
+                <fa-icon
+                  [icon]="faTwitter"
+                  size="2x"
+                  class="cursor-pointer twitterIconColor"
+                ></fa-icon>
+              </p>
+            </div>
           </div>
-        </div>
-        <br />
-        <div class="card py-3 px-2">
-          <div class="card-body text-start">
-            <h5 class="card-title">About Casper</h5>
-            <p class="card-text mt-3 fs-6">
-              Founded in 1949, Casper is the second-largest footwear brand in
-              the world. Casper offers sports and leisure apparel and footwear
-              with an iconic three-stripes logo. <br /><br />This company with
-              the coolest brand never stops moving forward. Innovations like
-              Boost technology and lightweight shoes have kept Casper ahead.<br /><br />
-              Casper even discusses with athletes their needs and preferences.
-              Shoes are then produced with these requirements in mind. Sports
-              fans wear the shoes the stars wear and had input in designing.
-              <br /><br />Combine the cool, the technology, and the sports
-              expertise with the discounts. Then add in a 2023 Casper coupon
-              code for the complete package.
-            </p>
+          <br />
+          <div class="card py-3 px-2">
+            <div class="card-body text-start">
+              <h5 class="card-title">About Casper</h5>
+              <p class="card-text mt-3 fs-6">
+                Founded in 1949, Casper is the second-largest footwear brand in
+                the world. Casper offers sports and leisure apparel and footwear
+                with an iconic three-stripes logo. <br /><br />This company with
+                the coolest brand never stops moving forward. Innovations like
+                Boost technology and lightweight shoes have kept Casper
+                ahead.<br /><br />
+                Casper even discusses with athletes their needs and preferences.
+                Shoes are then produced with these requirements in mind. Sports
+                fans wear the shoes the stars wear and had input in designing.
+                <br /><br />Combine the cool, the technology, and the sports
+                expertise with the discounts. Then add in a 2023 Casper coupon
+                code for the complete package.
+              </p>
+            </div>
           </div>
-        </div>
-        <br />
-        <div class="card pt-3 pb-1 px-2">
-          <div class="card-body text-start">
-            <h5 class="card-title">Related Stores</h5>
-            <p class="card-text mt-4 fs-6">
-              <button type="button" class="btn btn-outline-secondary mb-3 me-2">
-                ASOS
-              </button>
-              <button type="button" class="btn btn-outline-secondary mb-3 me-2">
-                BackCountry
-              </button>
-              <button type="button" class="btn btn-outline-secondary mb-3 me-2">
-                Chewy
-              </button>
-              <button type="button" class="btn btn-outline-secondary mb-3 me-2">
-                Adidas
-              </button>
-              <button type="button" class="btn btn-outline-secondary mb-3 me-2">
-                Amazon
-              </button>
-              <button type="button" class="btn btn-outline-secondary mb-3 me-2">
-                ASOS
-              </button>
-              <button type="button" class="btn btn-outline-secondary mb-3 me-2">
-                BackCountry
-              </button>
-              <button type="button" class="btn btn-outline-secondary mb-3 me-2">
-                Chewy
-              </button>
-              <button type="button" class="btn btn-outline-secondary mb-3 me-2">
-                Adidas
-              </button>
-              <button type="button" class="btn btn-outline-secondary mb-3 me-2">
-                Amazon</button
-              ><button
-                type="button"
-                class="btn btn-outline-secondary mb-3 me-2"
-              >
-                ASOS
-              </button>
-              <button type="button" class="btn btn-outline-secondary mb-3 me-2">
-                BackCountry
-              </button>
-              <button type="button" class="btn btn-outline-secondary mb-3 me-2">
-                Chewy
-              </button>
-              <button type="button" class="btn btn-outline-secondary mb-3 me-2">
-                Adidas
-              </button>
-              <button type="button" class="btn btn-outline-secondary mb-3 me-2">
-                Amazon
-              </button>
-            </p>
+          <br />
+          <div class="card pt-3 pb-1 px-2">
+            <div class="card-body text-start">
+              <h5 class="card-title">Related Stores</h5>
+              <p class="card-text mt-4 fs-6">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  ASOS
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  BackCountry
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Chewy
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Adidas
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Amazon
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  ASOS
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  BackCountry
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Chewy
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Adidas
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Amazon</button
+                ><button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  ASOS
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  BackCountry
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Chewy
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Adidas
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Amazon
+                </button>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -190,18 +237,18 @@
             <span class="text-bg-light fw-semibold py-2 px-3 font85">CODE</span>
           </div>
           <div class="col-md-7 col-sm-12 ps-4">
-            <h4 class="text-capitalize couponTitle">
+            <h5 class="text-capitalize couponTitle">
               Children Necklace Collection Starting From $19.95
-            </h4>
+            </h5>
             <p class="fs-6"><b>Expiry Date:</b> Dec 12, 2024</p>
           </div>
-          <div class="col-md-3 col-sm-12 text-center">
+          <div class="col-md-3 col-sm-12 text-center px-5">
             <div class="d-grid">
               <button
                 type="button"
-                class="btn btn-dark mt-2 rounded-pill fw-bolder px-4 py-3 fs-6"
+                class="btn btn-dark mt-2 rounded-pill fw-bolder fPoint9"
               >
-                SHOW COUPON CODE
+                SHOW CODE
               </button>
             </div>
           </div>
@@ -215,18 +262,18 @@
             <span class="text-bg-light fw-semibold py-2 px-3 font85">CODE</span>
           </div>
           <div class="col-md-7 col-sm-12 ps-4">
-            <h4 class="text-capitalize couponTitle">
+            <h5 class="text-capitalize couponTitle">
               Children Necklace Collection Starting From $19.95
-            </h4>
+            </h5>
             <p class="fs-6"><b>Expiry Date:</b> Dec 12, 2024</p>
           </div>
-          <div class="col-md-3 col-sm-12 text-center">
+          <div class="col-md-3 col-sm-12 text-center px-5">
             <div class="d-grid">
               <button
                 type="button"
-                class="btn btn-dark mt-2 rounded-pill fw-bolder px-4 py-3 fs-6"
+                class="btn btn-dark mt-2 rounded-pill fw-bolder fPoint9"
               >
-                SHOW COUPON CODE
+                SHOW CODE
               </button>
             </div>
           </div>
@@ -240,16 +287,16 @@
             <span class="text-bg-light fw-semibold py-2 px-3 font85">CODE</span>
           </div>
           <div class="col-md-7 col-sm-12 ps-4">
-            <h4 class="text-capitalize couponTitle">
+            <h5 class="text-capitalize couponTitle">
               Children Necklace Collection Starting From $19.95
-            </h4>
+            </h5>
             <p class="fs-6"><b>Expiry Date:</b> Dec 12, 2024</p>
           </div>
-          <div class="col-md-3 col-sm-12 text-center">
+          <div class="col-md-3 col-sm-12 text-center px-5">
             <div class="d-grid">
               <button
                 type="button"
-                class="btn btn-outline-dark mt-2 rounded-pill fw-bolder px-5 py-3 fs-6"
+                class="btn btn-outline-dark mt-2 rounded-pill fw-bolder fPoint9"
               >
                 AVAIL DEAL
               </button>
@@ -286,18 +333,18 @@
             <span class="text-bg-light fw-semibold py-2 px-3 font85">CODE</span>
           </div>
           <div class="col-md-7 col-sm-12 ps-4">
-            <h4 class="text-capitalize couponTitle">
+            <h5 class="text-capitalize couponTitle">
               Children Necklace Collection Starting From $19.95
-            </h4>
+            </h5>
             <p class="fs-6"><b>Expiry Date:</b> Dec 12, 2024</p>
           </div>
-          <div class="col-md-3 col-sm-12 text-center">
+          <div class="col-md-3 col-sm-12 text-center px-5">
             <div class="d-grid">
               <button
                 type="button"
-                class="btn btn-dark mt-2 rounded-pill fw-bolder px-4 py-3 fs-6"
+                class="btn btn-dark mt-2 rounded-pill fw-bolder fPoint9"
               >
-                SHOW COUPON CODE
+                SHOW CODE
               </button>
             </div>
           </div>
@@ -311,16 +358,16 @@
             <span class="text-bg-light fw-semibold py-2 px-3 font85">CODE</span>
           </div>
           <div class="col-md-7 col-sm-12 ps-4">
-            <h4 class="text-capitalize couponTitle">
+            <h5 class="text-capitalize couponTitle">
               Children Necklace Collection Starting From $19.95
-            </h4>
+            </h5>
             <p class="fs-6"><b>Expiry Date:</b> Dec 12, 2024</p>
           </div>
-          <div class="col-md-3 col-sm-12 text-center">
+          <div class="col-md-3 col-sm-12 text-center px-5">
             <div class="d-grid">
               <button
                 type="button"
-                class="btn btn-outline-dark mt-2 rounded-pill fw-bolder px-5 py-3 fs-6"
+                class="btn btn-outline-dark mt-2 rounded-pill fw-bolder fPoint9"
               >
                 AVAIL DEAL
               </button>
@@ -336,18 +383,18 @@
             <span class="text-bg-light fw-semibold py-2 px-3 font85">CODE</span>
           </div>
           <div class="col-md-7 col-sm-12 ps-4">
-            <h4 class="text-capitalize couponTitle">
+            <h5 class="text-capitalize couponTitle">
               Children Necklace Collection Starting From $19.95
-            </h4>
+            </h5>
             <p class="fs-6"><b>Expiry Date:</b> Dec 12, 2024</p>
           </div>
-          <div class="col-md-3 col-sm-12 text-center">
+          <div class="col-md-3 col-sm-12 text-center px-5">
             <div class="d-grid">
               <button
                 type="button"
-                class="btn btn-dark mt-2 rounded-pill fw-bolder px-4 py-3 fs-6"
+                class="btn btn-dark mt-2 rounded-pill fw-bolder fPoint9"
               >
-                SHOW COUPON CODE
+                SHOW CODE
               </button>
             </div>
           </div>
@@ -361,18 +408,18 @@
             <span class="text-bg-light fw-semibold py-2 px-3 font85">CODE</span>
           </div>
           <div class="col-md-7 col-sm-12 ps-4">
-            <h4 class="text-capitalize couponTitle">
+            <h5 class="text-capitalize couponTitle">
               Children Necklace Collection Starting From $19.95
-            </h4>
+            </h5>
             <p class="fs-6"><b>Expiry Date:</b> Dec 12, 2024</p>
           </div>
-          <div class="col-md-3 col-sm-12 text-center">
+          <div class="col-md-3 col-sm-12 text-center px-5">
             <div class="d-grid">
               <button
                 type="button"
-                class="btn btn-dark mt-2 rounded-pill fw-bolder px-4 py-3 fs-6"
+                class="btn btn-dark mt-2 rounded-pill fw-bolder fPoint9"
               >
-                SHOW COUPON CODE
+                SHOW CODE
               </button>
             </div>
           </div>
@@ -386,18 +433,18 @@
             <span class="text-bg-light fw-semibold py-2 px-3 font85">CODE</span>
           </div>
           <div class="col-md-7 col-sm-12 ps-4">
-            <h4 class="text-capitalize couponTitle">
+            <h5 class="text-capitalize couponTitle">
               Children Necklace Collection Starting From $19.95
-            </h4>
+            </h5>
             <p class="fs-6"><b>Expiry Date:</b> Dec 12, 2024</p>
           </div>
-          <div class="col-md-3 col-sm-12 text-center">
+          <div class="col-md-3 col-sm-12 text-center px-5">
             <div class="d-grid">
               <button
                 type="button"
-                class="btn btn-dark mt-2 rounded-pill fw-bolder px-4 py-3 fs-6"
+                class="btn btn-dark mt-2 rounded-pill fw-bolder fPoint9"
               >
-                SHOW COUPON CODE
+                SHOW CODE
               </button>
             </div>
           </div>
@@ -411,16 +458,16 @@
             <span class="text-bg-light fw-semibold py-2 px-3 font85">CODE</span>
           </div>
           <div class="col-md-7 col-sm-12 ps-4">
-            <h4 class="text-capitalize couponTitle">
+            <h5 class="text-capitalize couponTitle">
               Children Necklace Collection Starting From $19.95
-            </h4>
+            </h5>
             <p class="fs-6"><b>Expiry Date:</b> Dec 12, 2024</p>
           </div>
-          <div class="col-md-3 col-sm-12 text-center">
+          <div class="col-md-3 col-sm-12 text-center px-5">
             <div class="d-grid">
               <button
                 type="button"
-                class="btn btn-outline-dark mt-2 rounded-pill fw-bolder px-5 py-3 fs-6"
+                class="btn btn-outline-dark mt-2 rounded-pill fw-bolder fPoint9"
               >
                 AVAIL DEAL
               </button>
@@ -439,18 +486,18 @@
             <span class="text-bg-light fw-semibold py-2 px-3 font85">CODE</span>
           </div>
           <div class="col-md-7 col-sm-12 ps-4">
-            <h4 class="text-capitalize couponTitle">
+            <h5 class="text-capitalize couponTitle">
               Children Necklace Collection Starting From $19.95
-            </h4>
+            </h5>
             <p class="fs-6"><b>Expiry Date:</b> Dec 12, 2024</p>
           </div>
-          <div class="col-md-3 col-sm-12 text-center">
+          <div class="col-md-3 col-sm-12 text-center px-5">
             <div class="d-grid">
               <button
                 type="button"
-                class="btn btn-dark mt-2 rounded-pill fw-bolder px-4 py-3 fs-6"
+                class="btn btn-dark mt-2 rounded-pill fw-bolder fPoint9"
               >
-                SHOW COUPON CODE
+                SHOW CODE
               </button>
             </div>
           </div>
@@ -464,18 +511,18 @@
             <span class="text-bg-light fw-semibold py-2 px-3 font85">CODE</span>
           </div>
           <div class="col-md-7 col-sm-12 ps-4">
-            <h4 class="text-capitalize couponTitle">
+            <h5 class="text-capitalize couponTitle">
               Children Necklace Collection Starting From $19.95
-            </h4>
+            </h5>
             <p class="fs-6"><b>Expiry Date:</b> Dec 12, 2024</p>
           </div>
-          <div class="col-md-3 col-sm-12 text-center">
+          <div class="col-md-3 col-sm-12 text-center px-5">
             <div class="d-grid">
               <button
                 type="button"
-                class="btn btn-dark mt-2 rounded-pill fw-bolder px-4 py-3 fs-6"
+                class="btn btn-dark mt-2 rounded-pill fw-bolder fPoint9"
               >
-                SHOW COUPON CODE
+                SHOW CODE
               </button>
             </div>
           </div>
@@ -489,18 +536,18 @@
             <span class="text-bg-light fw-semibold py-2 px-3 font85">CODE</span>
           </div>
           <div class="col-md-7 col-sm-12 ps-4">
-            <h4 class="text-capitalize couponTitle">
+            <h5 class="text-capitalize couponTitle">
               Children Necklace Collection Starting From $19.95
-            </h4>
+            </h5>
             <p class="fs-6"><b>Expiry Date:</b> Dec 12, 2024</p>
           </div>
-          <div class="col-md-3 col-sm-12 text-center">
+          <div class="col-md-3 col-sm-12 text-center px-5">
             <div class="d-grid">
               <button
                 type="button"
-                class="btn btn-dark mt-2 rounded-pill fw-bolder px-4 py-3 fs-6"
+                class="btn btn-dark mt-2 rounded-pill fw-bolder fPoint9"
               >
-                SHOW COUPON CODE
+                SHOW CODE
               </button>
             </div>
           </div>
@@ -514,18 +561,18 @@
             <span class="text-bg-light fw-semibold py-2 px-3 font85">CODE</span>
           </div>
           <div class="col-md-7 col-sm-12 ps-4">
-            <h4 class="text-capitalize couponTitle">
+            <h5 class="text-capitalize couponTitle">
               Children Necklace Collection Starting From $19.95
-            </h4>
+            </h5>
             <p class="fs-6"><b>Expiry Date:</b> Dec 12, 2024</p>
           </div>
-          <div class="col-md-3 col-sm-12 text-center">
+          <div class="col-md-3 col-sm-12 text-center px-5">
             <div class="d-grid">
               <button
                 type="button"
-                class="btn btn-dark mt-2 rounded-pill fw-bolder px-4 py-3 fs-6"
+                class="btn btn-dark mt-2 rounded-pill fw-bolder fPoint9"
               >
-                SHOW COUPON CODE
+                SHOW CODE
               </button>
             </div>
           </div>
@@ -539,18 +586,18 @@
             <span class="text-bg-light fw-semibold py-2 px-3 font85">CODE</span>
           </div>
           <div class="col-md-7 col-sm-12 ps-4">
-            <h4 class="text-capitalize couponTitle">
+            <h5 class="text-capitalize couponTitle">
               Children Necklace Collection Starting From $19.95
-            </h4>
+            </h5>
             <p class="fs-6"><b>Expiry Date:</b> Dec 12, 2024</p>
           </div>
-          <div class="col-md-3 col-sm-12 text-center">
+          <div class="col-md-3 col-sm-12 text-center px-5">
             <div class="d-grid">
               <button
                 type="button"
-                class="btn btn-dark mt-2 rounded-pill fw-bolder px-4 py-3 fs-6"
+                class="btn btn-dark mt-2 rounded-pill fw-bolder fPoint9"
               >
-                SHOW COUPON CODE
+                SHOW CODE
               </button>
             </div>
           </div>
@@ -564,19 +611,216 @@
             <span class="text-bg-light fw-semibold py-2 px-3 font85">CODE</span>
           </div>
           <div class="col-md-7 col-sm-12 ps-4">
-            <h4 class="text-capitalize couponTitle">
+            <h5 class="text-capitalize couponTitle">
               Children Necklace Collection Starting From $19.95
-            </h4>
+            </h5>
             <p class="fs-6"><b>Expiry Date:</b> Dec 12, 2024</p>
           </div>
-          <div class="col-md-3 col-sm-12 text-center">
+          <div class="col-md-3 col-sm-12 text-center px-5">
             <div class="d-grid">
               <button
                 type="button"
-                class="btn btn-dark mt-2 rounded-pill fw-bolder px-4 py-3 fs-6"
+                class="btn btn-dark mt-2 rounded-pill fw-bolder fPoint9"
               >
-                SHOW COUPON CODE
+                SHOW CODE
               </button>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="smallScreen">
+          <div class="card pt-3 pb-2 px-2">
+            <div class="card-body text-start">
+              <h5 class="card-title">Casper Discount Summary</h5>
+              <br />
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between fs-6">
+                    <span>Exclusive Offers</span>
+                    <span>1</span>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between fs-6">
+                    <span>Promo Codes</span>
+                    <span>8</span>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between fs-6">
+                    <span>Verified Offers</span>
+                    <span>7</span>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between fs-6">
+                    <span>New Coupons</span>
+                    <span>3</span>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between fs-6">
+                    <span>Total Offers</span>
+                    <span>30</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br />
+          <div class="card py-3 px-2">
+            <div class="card-body text-start">
+              <h5 class="card-title">
+                Save with adidas coupon codes on Reddit
+              </h5>
+              <p class="card-text mt-3 fs-6">
+                Subreddits are a great place to source adidas coupon codes. You
+                can find subreddits dedicated explicitly to sneaker culture and
+                shopping. Reddit users frequently unload single-use coupons if
+                they cannot use them for themselves. These will be coupons near
+                the end of their validity.<br /><br />
+                You don't have to be a Redditor to read posts, but you must be
+                one to comment. To find these savings, go onto reddit.com.
+                Search up keywords like "adidas" followed by "coupon" or
+                something similar.<br /><br />
+                The coupons you find are often "first come first served." If
+                you're lucky and find one that works, be sure to use it quickly!
+                Otherwise, head back here for frequently updated coupons.
+              </p>
+            </div>
+          </div>
+          <br />
+          <div class="card pt-3 pb-1 px-2">
+            <div class="card-body text-start">
+              <h5 class="card-title">Share It</h5>
+              <p class="card-text mt-4 fs-6">
+                <fa-icon
+                  [icon]="faFacebook"
+                  size="2x"
+                  class="cursor-pointer fbIconColor me-3"
+                ></fa-icon>
+                <fa-icon
+                  [icon]="faTwitter"
+                  size="2x"
+                  class="cursor-pointer twitterIconColor"
+                ></fa-icon>
+              </p>
+            </div>
+          </div>
+          <br />
+          <div class="card py-3 px-2">
+            <div class="card-body text-start">
+              <h5 class="card-title">About Casper</h5>
+              <p class="card-text mt-3 fs-6">
+                Founded in 1949, Casper is the second-largest footwear brand in
+                the world. Casper offers sports and leisure apparel and footwear
+                with an iconic three-stripes logo. <br /><br />This company with
+                the coolest brand never stops moving forward. Innovations like
+                Boost technology and lightweight shoes have kept Casper
+                ahead.<br /><br />
+                Casper even discusses with athletes their needs and preferences.
+                Shoes are then produced with these requirements in mind. Sports
+                fans wear the shoes the stars wear and had input in designing.
+                <br /><br />Combine the cool, the technology, and the sports
+                expertise with the discounts. Then add in a 2023 Casper coupon
+                code for the complete package.
+              </p>
+            </div>
+          </div>
+          <br />
+          <div class="card pt-3 pb-1 px-2">
+            <div class="card-body text-start">
+              <h5 class="card-title">Related Stores</h5>
+              <p class="card-text mt-4 fs-6">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  ASOS
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  BackCountry
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Chewy
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Adidas
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Amazon
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  ASOS
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  BackCountry
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Chewy
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Adidas
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Amazon</button
+                ><button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  ASOS
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  BackCountry
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Chewy
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Adidas
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary mb-3 me-2"
+                >
+                  Amazon
+                </button>
+              </p>
             </div>
           </div>
         </div>

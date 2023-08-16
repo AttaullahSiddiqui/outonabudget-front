@@ -134,7 +134,7 @@
       </li>
       <li
         class="list-group-item d-flex justify-content-start align-items-center border-0 sideMenuListItem"
-        routerLink="/media"
+        routerLink="/news"
         *ngIf="currentRoute == '/'"
         (click)="closeOffCanvas()"
       >
@@ -207,7 +207,8 @@
 </div>
 <hr class="my-0" />
 
-<div class="container" *ngIf="currentRoute != '/'">
+<!-- <div class="container" *ngIf="currentRoute != '/'"> -->
+<div class="container" *ngIf="isShowNavBar()">
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <!-- <button

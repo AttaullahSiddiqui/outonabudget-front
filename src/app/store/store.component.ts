@@ -15,8 +15,11 @@ import {
 export class StoreComponent implements OnInit {
   faFacebook = faFacebookSquare;
   faTwitter = faTwitter;
+  smallScreen: Boolean = false;
 
   constructor(private _dataService: DataService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (window.screen.width < 830) this.smallScreen = true;
+  }
 }

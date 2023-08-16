@@ -1,0 +1,579 @@
+<div id="homeRoute">
+  <div class="container mt-5">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [ngClass]="{ active: !switch }"
+          (click)="changeTab(0)"
+          >Top Stories</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [ngClass]="{ active: switch }"
+          (click)="changeTab(1)"
+          >Latest</a
+        >
+      </li>
+    </ul>
+    <br />
+    <br />
+    <div class="row" *ngIf="!switch">
+      <div class="col-md-5 col-sm-12 pe-4">
+        <h2
+          class="fw-bolder fs-2 hover-underline"
+          [routerLink]="['/news', 'newsId']"
+        >
+          The tech job recession is over
+        </h2>
+        <br />
+        <ul class="list-group newsList">
+          <li class="list-group-item">
+            Wall Street was expecting the China's economy to boom after its
+            post-COVID reopening.
+          </li>
+          <li class="list-group-item">
+            But with disappointing industrial production, slowed trade, and a
+            private sector that's running scared, those dreams have officially
+            gone bust.
+          </li>
+          <li class="list-group-item">
+            The end of China's economic miracle is going to drive down stocks on
+            Wall Street — and drive up prices for everyone.
+          </li>
+        </ul>
+        <br />
+        <span
+          class="badge rounded-pill text-bg-primary py-2 px-3 cursor-pointer mb-3"
+          [routerLink]="['/news', 'newsId']"
+          >READ MORE</span
+        >
+        <br />
+        <hr class="mb-0" />
+        <ul class="list-group list-group-flush">
+          <li
+            class="list-group-item fw-bolder hover-underline"
+            [routerLink]="['/news', 'newsId']"
+          >
+            Bezos is back at it with another hot yacht summer
+          </li>
+          <li
+            class="list-group-item fw-bolder hover-underline"
+            [routerLink]="['/news', 'newsId']"
+          >
+            'I moved to Germany and regret it'
+          </li>
+          <li
+            class="list-group-item fw-bolder hover-underline"
+            [routerLink]="['/news', 'newsId']"
+          >
+            The one question the Microsoft CEO asks to test AI's smarts
+          </li>
+          <li
+            class="list-group-item fw-bolder hover-underline"
+            [routerLink]="['/news', 'newsId']"
+          >
+            What to expect from today's Fed decision
+          </li>
+          <li
+            class="list-group-item fw-bolder hover-underline"
+            [routerLink]="['/news', 'newsId']"
+          >
+            People are impersonating homeowners to take out mortgages and steal
+            the money
+          </li>
+          <li
+            class="list-group-item fw-bolder hover-underline"
+            [routerLink]="['/news', 'newsId']"
+          >
+            In Ukraine's counteroffensive, 'the big fireworks are still to come'
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-7 col-sm-12 pe-4">
+        <img
+          src="https://i.insider.com/64ce355c20f1cf0019cb444b?width=1000&format=jpeg&auto=webp"
+          class="newsImg"
+        />
+      </div>
+    </div>
+    <div class="row" *ngIf="switch">
+      <div class="col-md-5 col-sm-12 pe-4">
+        <h2 class="fw-bolder fs-2" [routerLink]="['/news', 'newsId']">
+          It was a great week for the economy
+        </h2>
+        <br />
+        <ul class="list-group newsList">
+          <li class="list-group-item">
+            New retail sales numbers, inflation, and a pause in rate hikes point
+            to a strong week in the economy.
+          </li>
+          <li class="list-group-item">
+            This data shows the economy may be on its way to balancing lowering
+            inflation with maintaining growth.
+          </li>
+          <li class="list-group-item">
+            Retail sales rose 0.3% from April to May as consumers spent more
+            across the board.
+          </li>
+        </ul>
+        <br />
+        <span
+          class="badge rounded-pill text-bg-primary py-2 px-3 cursor-pointer mb-3"
+          [routerLink]="['/news', 'newsId']"
+          >READ MORE</span
+        >
+        <br />
+        <hr class="mb-0" />
+        <ul class="list-group list-group-flush">
+          <li
+            class="list-group-item fw-bolder hover-underline"
+            [routerLink]="['/news', 'newsId']"
+          >
+            Putin warns the West of Russian tactical nukes being put in Belarus
+          </li>
+          <li
+            class="list-group-item fw-bolder hover-underline"
+            [routerLink]="['/news', 'newsId']"
+          >
+            Kourtney Kardashian surprised Travis Barker with pregnancy at
+            concert
+          </li>
+          <li
+            class="list-group-item fw-bolder hover-underline"
+            [routerLink]="['/news', 'newsId']"
+          >
+            Elon Musk asks: 'If I'm so smart, why did I pay so much for
+            Twitter?'
+          </li>
+          <li
+            class="list-group-item fw-bolder hover-underline"
+            [routerLink]="['/news', 'newsId']"
+          >
+            Stop quiet quitting and start 'quiet thriving' to boost your career
+          </li>
+          <li
+            class="list-group-item fw-bolder hover-underline"
+            [routerLink]="['/news', 'newsId']"
+          >
+            The out-of-office message you need if you have Juneteenth off
+          </li>
+          <li
+            class="list-group-item fw-bolder hover-underline"
+            [routerLink]="['/news', 'newsId']"
+          >
+            In Ukraine's counteroffensive, 'the big fireworks are still to come'
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-7 col-sm-12 pe-4">
+        <img
+          src="https://i.insider.com/6387af99d346c10018949a1b?width=1000&format=jpeg&auto=webp"
+          class="newsImg"
+        />
+      </div>
+    </div>
+    <br />
+    <hr />
+    <div class="row">
+      <div class="col-md-3 col-sm-12 px-2">
+        <br />
+        <h4 class="fs-4">Popular Right Now</h4>
+        <br />
+        <ul class="list-group">
+          <li class="list-group-item d-flex flex-row border-0 px-0">
+            <span class="text-primary fs-2 me-4">1</span>
+            <span
+              class="fs-5 fw-bold hover-underline"
+              [routerLink]="['/news', 'newsId']"
+              >Reclusive rich: The world's secretive billionaires</span
+            >
+          </li>
+          <li class="list-group-item d-flex flex-row border-0 px-0">
+            <span class="text-primary fs-2 me-4">2</span>
+            <span
+              class="fs-5 fw-bold hover-underline"
+              [routerLink]="['/news', 'newsId']"
+              >Russian kids learn drones, guns, Ukrainian kids learn mine
+              safety</span
+            >
+          </li>
+          <li class="list-group-item d-flex flex-row border-0 px-0">
+            <span class="text-primary fs-2 me-4">3</span>
+            <span
+              class="fs-5 fw-bold hover-underline"
+              [routerLink]="['/news', 'newsId']"
+              >China's economy is imploding. That's a problem for US, Wall
+              Street.</span
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-12 px-3">
+        <br />
+        <p
+          class="text-primary fw-semibold mb-3 pt-1 hover-underline"
+          [routerLink]="['/newsbytype', 'economy']"
+        >
+          POLITICS
+        </p>
+        <br />
+        <div>
+          <img
+            src="https://i.insider.com/64dd07ff4ef9f30019f84cd8?width=200&format=jpeg&auto=webp"
+            class="float-end w-25 my-2"
+          />
+          <span
+            class="fs-5 fw-bold hover-underline"
+            [routerLink]="['/news', 'newsId']"
+          >
+            A former campaign staffer for Rep. George Santos who impersonated
+            Kevin McCarthy's chief of staff for donations was just indicted for
+            wire fraud and identity theft
+          </span>
+          <br />
+          <br />
+          <span class="fs-5"
+            >Prosecutors allege that Sam Miele solicited more than a dozen
+            donations using a false identity.</span
+          >
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-12 px-3">
+        <br />
+        <p
+          class="text-primary fw-semibold mb-3 pt-1 hover-underline"
+          [routerLink]="['/newsbytype', 'tech']"
+        >
+          MILITARY & DEFENSE
+        </p>
+        <br />
+        <div>
+          <img
+            src="https://i.insider.com/64dd0584bd8c0900184e421e?width=200&format=jpeg&auto=webp"
+            class="float-end w-25 my-2"
+          />
+          <span
+            class="fs-5 fw-bold hover-underline"
+            [routerLink]="['/news', 'newsId']"
+          >
+            Sen. Dianne Feinstein says she's being cut out of millions from her
+            husband's estate in an act of 'financial elder abuse'
+          </span>
+          <br />
+          <br />
+          <span class="fs-5"
+            >The suit, filed by Feinstein's daughter Katherine, is the latest
+            episode in a fight over the late-billionaire Richard Blum's
+            estate.</span
+          >
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-12 px-3">
+        <br />
+        <p
+          class="text-primary fw-semibold mb-3 pt-1 hover-underline"
+          [routerLink]="['/newsbytype', 'careers']"
+        >
+          CAREERS
+        </p>
+        <br />
+        <div>
+          <img
+            src="https://i.insider.com/64dc96584ef9f30019f7d647?width=200&format=jpeg&auto=webp"
+            class="float-end w-25 my-2"
+          />
+          <span
+            class="fs-5 fw-bold hover-underline"
+            [routerLink]="['/news', 'newsId']"
+          >
+            Ukrainians are testing out a jerry-rigged mine-clearing machine made
+            from a farm vehicle with spinning metal chains
+          </span>
+          <br />
+          <br />
+          <span class="fs-5"
+            >A humble excavator with spinning metal flails is Ukraine's latest
+            trial in tackling the staggering number of deadly mines laid by the
+            Russian invader.</span
+          >
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div class="row">
+      <div class="col-md-3 col-sm-12 text-center">
+        <img
+          src="https://www.insider.com/public/assets/rebrand/newsletter-mailbox.png"
+        />
+      </div>
+      <div class="col-md-8 col-sm-12 ps-3">
+        <h5 class="fw-bolder text-dark fs-4">Sign up for OutOnaBudget Today</h5>
+        <p class="fs-5">
+          Top editors give you the stories you want — delivered right to your
+          inbox every day
+        </p>
+        <br />
+        <div class="input-group mb-1 input-group-lg">
+          <input
+            type="email"
+            id="subscriptionInput"
+            class="form-control py-3"
+            placeholder="Email Address"
+            aria-label="Email Address"
+            aria-describedby="subscription-box"
+          />
+          <button
+            class="btn btn-dark border-0 fs-5 rounded-pill ms-3 px-5 py-3"
+            type="button"
+            id="subscription-box"
+          >
+            SIGN UP
+          </button>
+        </div>
+        <br />
+      </div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div class="row">
+      <div class="col-md-9 col-sm-12">
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <div class="border-bottom mb-3 pb-3">
+              <p class="text-primary fw-semibold mb-2 pt-1">
+                ECONOMY &nbsp;<span class="text-muted" style="font-size: 0.8em"
+                  >1 hour ago</span
+                >
+              </p>
+              <div>
+                <span
+                  class="fs-5 fw-bolder hover-underline"
+                  [routerLink]="['/news', 'newsId']"
+                >
+                  A luxury department store in San Francisco threatens to shut
+                  up shop after 162 years, describing the city as 'unlivable'
+                  for its residents and 'unsafe' for its staff
+                </span>
+                <br />
+                <br />
+                <span class="fs-5 newsDesColor"
+                  >The owner of luxury San Francisco retailer Gump's warned that
+                  this holiday season "may be our last."</span
+                >
+                <img
+                  src="https://i.insider.com/64dcb49c4ef9f30019f7e9e2?width=400&format=jpeg&auto=webp"
+                  class="w-100 mt-2"
+                />
+              </div>
+            </div>
+            <div class="border-bottom mb-3 pb-3">
+              <p class="text-primary fw-semibold mb-2 pt-1">
+                ECONOMY &nbsp;<span class="text-muted" style="font-size: 0.8em"
+                  >1 hour ago</span
+                >
+              </p>
+              <div>
+                <span
+                  class="fs-5 fw-bolder hover-underline"
+                  [routerLink]="['/news', 'newsId']"
+                >
+                  I left NYC and bought a house in Montana. I had a big job
+                  title but a terrible bank account — now I'm happier and my
+                  money goes further.
+                </span>
+                <br />
+                <br />
+                <span class="fs-5 newsDesColor"
+                  >The proposed law is set to require Russian companies that
+                  made profits of more than 1 billion rubles each year since
+                  2021 to pay a one-off 10% tax.</span
+                >
+                <img
+                  src="https://i.insider.com/64db9ae25e5d5a00195e687e?width=200&format=jpeg&auto=webp"
+                  class="w-100 mt-2"
+                />
+              </div>
+            </div>
+            <div class="border-bottom mb-3 pb-3">
+              <p class="text-primary fw-semibold mb-2 pt-1">
+                ECONOMY &nbsp;<span class="text-muted" style="font-size: 0.8em"
+                  >1 hour ago</span
+                >
+              </p>
+              <div>
+                <span
+                  class="fs-5 fw-bolder hover-underline"
+                  [routerLink]="['/news', 'newsId']"
+                >
+                  Police resorted to guarding ATMs in Ireland after a glitch at
+                  the country's biggest bank let some people take out over
+                  $1,000 of cash they didn't have
+                </span>
+                <br />
+                <br />
+                <span class="fs-5 newsDesColor"
+                  >Bank of Ireland apologized after a technical glitch let
+                  customers with no money in their accounts transfer up to 500
+                  euros.</span
+                >
+                <img
+                  src="https://i.insider.com/64dbc03a5e5d5a00195e93bf?width=400&format=jpeg&auto=webp"
+                  class="w-100 mt-2"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <div class="border-bottom mb-3 pb-3">
+              <p
+                class="text-primary fw-semibold pt-1 hover-underline"
+                [routerLink]="['/newsbytype', 'economy']"
+              >
+                REAL ESTATE
+              </p>
+              <img
+                src="https://i.insider.com/64dbe6665e5d5a00195ec3ee?width=400&format=jpeg&auto=webp"
+                class="float-end w-50 mb-2 ms-2"
+              />
+              <span
+                class="fs-5 fw-bold hover-underline"
+                [routerLink]="['/news', 'newsId']"
+              >
+                I grew up in Orlando, Florida, but never experienced summers as
+                hot as this. That's why I bought a second home in North
+                Carolina, and might move there for good.
+              </span>
+              <br />
+              <br />
+              <span class="fs-5"
+                >Florida native Mary Cannon never dreamed of leaving Orlando,
+                but said the increasingly hot summers have made her fear for her
+                son's safety said the increasingly hot summers have made her
+                fear for her son's safety</span
+              >
+            </div>
+            <div class="border-bottom mb-3 pb-3">
+              <p
+                class="text-primary fw-semibold pt-1 hover-underline"
+                [routerLink]="['/newsbytype', 'economy']"
+              >
+                REAL ESTATE
+              </p>
+              <img
+                src="https://i.insider.com/64dce9dc4ef9f30019f81b0b?width=400&format=jpeg&auto=webp"
+                class="float-end w-50 mb-2 ms-2"
+              />
+              <span
+                class="fs-5 fw-bold hover-underline"
+                [routerLink]="['/news', 'newsId']"
+              >
+                I grew up in Orlando, Florida, but never experienced summers as
+                hot as this. That's why I bought a second home in North
+                Carolina, and might move there for good.
+              </span>
+              <br />
+              <br />
+              <span class="fs-5"
+                >Florida native Mary Cannon never dreamed of leaving Orlando,
+                but said the increasingly hot summers have made her fear for her
+                son's safety said the increasingly hot summers have made her
+                fear for her son's safety</span
+              >
+            </div>
+            <div class="border-bottom mb-3 pb-3">
+              <p
+                class="text-primary fw-semibold pt-1 hover-underline"
+                [routerLink]="['/newsbytype', 'economy']"
+              >
+                REAL ESTATE
+              </p>
+              <img
+                src="https://i.insider.com/64dccb934ef9f30019f7f65d?width=400&format=jpeg&auto=webp"
+                class="float-end w-50 mb-2 ms-2"
+              />
+              <span
+                class="fs-5 fw-bold hover-underline"
+                [routerLink]="['/news', 'newsId']"
+              >
+                I grew up in Orlando, Florida, but never experienced summers as
+                hot as this. That's why I bought a second home in North
+                Carolina, and might move there for good.
+              </span>
+              <br />
+              <br />
+              <span class="fs-5"
+                >Florida native Mary Cannon never dreamed of leaving Orlando,
+                but said the increasingly hot summers have made her fear for her
+                son's safety said the increasingly hot summers have made her
+                fear for her son's safety</span
+              >
+            </div>
+            <div class="border-bottom mb-3 pb-3">
+              <p
+                class="text-primary fw-semibold pt-1 hover-underline"
+                [routerLink]="['/newsbytype', 'economy']"
+              >
+                REAL ESTATE
+              </p>
+              <img
+                src="https://i.insider.com/5f46588289aff80028ab7f74?width=400&format=jpeg&auto=webp"
+                class="float-end w-50 mb-2 ms-2"
+              />
+              <span
+                class="fs-5 fw-bold hover-underline"
+                [routerLink]="['/news', 'newsId']"
+              >
+                I grew up in Orlando, Florida, but never experienced summers as
+                hot as this. That's why I bought a second home in North
+                Carolina, and might move there for good.
+              </span>
+              <br />
+              <br />
+              <span class="fs-5"
+                >Florida native Mary Cannon never dreamed of leaving Orlando,
+                but said the increasingly hot summers have made her fear for her
+                son's safety said the increasingly hot summers have made her
+                fear for her son's safety</span
+              >
+            </div>
+            <div class="border-bottom mb-3 pb-3">
+              <p
+                class="text-primary fw-semibold pt-1 hover-underline"
+                [routerLink]="['/newsbytype', 'economy']"
+              >
+                REAL ESTATE
+              </p>
+              <img
+                src="https://i.insider.com/64c034dcd1a36600194c6f6e?width=400&format=jpeg&auto=webp"
+                class="float-end w-50 mb-2 ms-2"
+              />
+              <span
+                class="fs-5 fw-bold hover-underline"
+                [routerLink]="['/news', 'newsId']"
+              >
+                I grew up in Orlando, Florida, but never experienced summers as
+                hot as this. That's why I bought a second home in North
+                Carolina, and might move there for good.
+              </span>
+              <br />
+              <br />
+              <span class="fs-5"
+                >Florida native Mary Cannon never dreamed of leaving Orlando,
+                but said the increasingly hot summers have made her fear for her
+                son's safety said the increasingly hot summers have made her
+                fear for her son's safety</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />

@@ -13,9 +13,27 @@ import { StoreComponent } from './store/store.component';
 import { CategoryComponent } from './category/category.component';
 import { CategoryblogComponent } from './categoryblog/categoryblog.component';
 import { MediaComponent } from './media/media.component';
+import { NewsbycategoryComponent } from './newsbycategory/newsbycategory.component';
+import { SinglenewsComponent } from './singlenews/singlenews.component';
+import { NewsComponent } from './news/news.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, canActivate: [AuthService] },
+  {
+    path: 'newsbytype/:category',
+    component: NewsbycategoryComponent,
+    canActivate: [AuthService],
+  },
+  {
+    path: 'news',
+    component: NewsComponent,
+    canActivate: [AuthService],
+  },
+  {
+    path: 'news/:id',
+    component: SinglenewsComponent,
+    canActivate: [AuthService],
+  },
   {
     path: 'categories',
     component: CategoriesComponent,

@@ -49,6 +49,15 @@ export class HeaderComponent implements OnInit {
   slideArray = null;
   smallScreen: Boolean = false;
   currentRoute: string = '';
+  showNavBarArr = [
+    'media',
+    'stores',
+    'store',
+    'categories',
+    'category',
+    'blogs',
+    'blog',
+  ];
 
   constructor(private _dataService: DataService, private router: Router) {}
 
@@ -70,6 +79,13 @@ export class HeaderComponent implements OnInit {
     setTimeout(() => {
       ggg.click();
     }, 100);
+  }
+  isShowNavBar() {
+    var location = window.location.pathname;
+    for (var i = 0; i < this.showNavBarArr.length; i++) {
+      if (location.includes(this.showNavBarArr[i])) return true;
+    }
+    return false;
   }
   onSwiper(swiper: any) {
     swiper.update();

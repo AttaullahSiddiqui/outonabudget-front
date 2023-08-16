@@ -9,19 +9,19 @@ img.storeImgLeft {
 //  border-top-right-radius: 20px;
 //  border-bottom-left-radius: 20px;
 // }
-fa-icon.fbIconColor>svg {
+fa-icon.fbIconColor > svg {
   color: rgb(59, 89, 152);
 }
-fa-icon.twitterIconColor>svg {
+fa-icon.twitterIconColor > svg {
   color: rgb(0, 172, 238);
 }
-span.offerBold{
+span.offerBold {
   font-family: grotesquebold !important;
 }
-span.font85{
+span.font85 {
   font-size: 0.85em;
 }
-h4.couponTitle{
+h4.couponTitle {
   font-family: grotesqueregular;
   margin-bottom: 20px;
   margin-top: 10px;
@@ -30,17 +30,27 @@ h4.couponTitle{
   --f: 10px; /* control the folded part*/
   --r: 15px; /* control the ribbon shape */
   --t: 10px; /* the top offset */
-  
+
   position: absolute;
-  inset: var(--t) calc(-1*var(--f)) auto auto;
+  inset: var(--t) calc(-1 * var(--f)) auto auto;
   padding-bottom: 12px;
   padding-left: 25px;
-  clip-path: 
-    polygon(0 0,100% 0,100% calc(100% - var(--f)),calc(100% - var(--f)) 100%,
-      calc(100% - var(--f)) calc(100% - var(--f)),0 calc(100% - var(--f)),
-      var(--r) calc(50% - var(--f)/2));
-  background: #BD1550;
-  box-shadow: 0 calc(-1*var(--f)) 0 inset #0005;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - var(--f)),
+    calc(100% - var(--f)) 100%,
+    calc(100% - var(--f)) calc(100% - var(--f)),
+    0 calc(100% - var(--f)),
+    var(--r) calc(50% - var(--f) / 2)
+  );
+  background: #bd1550;
+  box-shadow: 0 calc(-1 * var(--f)) 0 inset #0005;
   color: white;
-    width: 150px;
+  width: 150px;
+}
+button.fPoint9 {
+  font-size: 0.9em !important;
+  padding-top: 0.8em !important;
+  padding-bottom: 0.8em !important;
 }
